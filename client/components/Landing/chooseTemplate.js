@@ -10,34 +10,31 @@ class ChooseTemplate extends Component{
                            <div className="col-md-12">
                                     <div className="slick-slider-2">
                                         <div>
-                                            <div className="slider-item">1</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">2</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">3</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">4</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">5</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">6</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">7</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">8</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                         <div>
-                                            <div className="slider-item">9</div>
-                                        </div>
-                                        <div>
-                                            <div className="slider-item">10</div>
+                                            <div className="slider-item"><img src="/resume_templates/640a389b-ca21-4480-8446-9cda7c9f4d46_thumb.png"/></div>
                                         </div>
                                     </div>
                             </div>
