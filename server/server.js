@@ -2,8 +2,15 @@ import express from 'express'
 import path from 'path'
 import CONFIG from './../config'
 import bodyParser from 'body-parser'
+import mongoose from 'mongoose'
+mongoose.Promise = global.Promise
+mongoose.connect(CONFIG.mongoURI, { useNewUrlParser: true , useFindAndModify: false});
+mongoose.connection.on('error', ()=>{
+   throw new Error('unable to connect to database')
+})
 
 import eztController from './controllers/'
+import adminController from './controllers/admin_controller'
 import Template from './../template.js'
 
 const app = express();
@@ -21,6 +28,7 @@ import devBundle from './devBundle'
 devBundle.compile(app)
 
 app.use('/api', eztController(express.Router()));
+app.use('/api', adminController(express.Router()));
 
 app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 

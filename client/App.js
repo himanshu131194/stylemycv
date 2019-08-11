@@ -11,7 +11,7 @@ class App extends Component{
          return(
          	<body>
          	  <BrowserRouter>
-	            <div className="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar fixed-footer">
+	            <div className="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
 	               <MainHeader/>
 	               <div className="app-main">
 	                  <Route exact path="/" component={Landing} />
