@@ -1,0 +1,85 @@
+import React, {Component} from 'react'
+
+
+class ListCvs extends Component{
+   render(){
+   	 return(
+       <div className="app-main__outer sidebar__fixed">
+                     <div className="app-main__inner">
+                       <div className="row">
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-success btn-success btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>                                
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-success btn-success btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>                              
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-success btn-success btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>   
+                                                             
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>
+
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-success btn-success btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>
+                               <div className="col-md-12 col-lg-6 col-xl-4">
+									<div className="card-shadow-primary card-border mb-3 card">
+									   <div className="card-body">
+									   	   <img className="image-fit" src="https://stylemycv.s3.ap-south-1.amazonaws.com/creative/photography/98f95e47-5448-4692-ac42-d6e113decd21_thumbnail.png"/>
+									   </div>
+									   <div className="flex justify-content-between card-footer">
+									      <button className="btn-shadow-primary btn btn-primary btn-lg">View Resume</button>
+									      <button className="btn-shadow-success btn-success btn btn-primary btn-lg">Download Resume</button>
+									   </div>
+									</div>
+                               </div>
+                       </div>
+                     </div>
+       </div> 
+   	 )
+   }
+}
+
+export default ListCvs;

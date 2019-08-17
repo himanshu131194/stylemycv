@@ -9503,6 +9503,9 @@ a,button,.btn{
 .fixed-sidebar .app-main .app-main__outer{
     z-index:9;
 }
+.sidebar__fixed{
+    padding-left: 280px;  
+}
 .fixed-sidebar.fixed-header .app-sidebar .app-header__logo{
     display:none
 }
@@ -10369,18 +10372,6 @@ a,button,.btn{
     background:transparent !important
 }
 
-/*  resume landing image*/
-.demo-image-bg{
-  height: auto;
-  margin-bottom: 30px;
-  background-size: 100%;
-  /* background-image: url();
-  background-repeat: no-repeat; */
-}
-.demo-image-bg img{
-    width: 100%;
-}
-/*  */
 
 
 /*slick slider */
@@ -10806,6 +10797,32 @@ a,button,.btn{
 /**/
 
 
+
+
+/*CUSTOM ADDED CLASSES*/
+
+/*  resume landing image*/
+.demo-image-bg{
+  height: auto;
+  margin-bottom: 30px;
+  background-size: 100%;
+  /* background-image: url();
+  background-repeat: no-repeat; */
+}
+.demo-image-bg img{
+    width: 100%;
+}
+/*  */
+
+.image-fit{
+   width: 100%;
+}
+
+.flex{
+   display: flex;
+}
+
+/*END */
 
 
 

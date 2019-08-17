@@ -20,6 +20,15 @@ const resumeTrack = new mongoose.Schema({
                   size: {type: Number}
             }
       },
+      s3Bucket: {
+          type: String
+      },
+      s3URL: {
+          type: String
+      },
+      templateID:{
+          type: String
+      },
       category:{
          type: String
       },
