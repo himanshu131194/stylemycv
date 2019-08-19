@@ -445,6 +445,13 @@ export default (router)=>{
 
 //     })
 
+
+    router.get('/test-admin', (req ,res)=>{
+         res.send({
+            key: 'working'
+         })
+    });
+
     return router;
 }
 

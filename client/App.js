@@ -1,5 +1,13 @@
 import React, {Component, Fragment} from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
+
+import reduxThunk from 'redux-thunk'
+import {Provider} from 'react-redux'
+import {createStore, applyMiddleware} from 'redux'
+import reducers from './reducers'
+
+
+
 import './assets/main.css'
 import MainHeader from './components/partials/MainHeader'
 import Landing from './components/Landing'
@@ -11,6 +19,7 @@ class App extends Component{
          return(
          	<body>
          	  <BrowserRouter>
+             <Provider store={applyMiddleware(reduxThunk)(createStore)(reducers)}>
 	            <div className="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
 	               <MainHeader/>
 	               <div className="app-main">
@@ -18,6 +27,7 @@ class App extends Component{
                       <Route path="/lists" component={CvLists} />
 	               </div>
 	            </div>
+              </Provider>
 	          </BrowserRouter>
             </body>
          )

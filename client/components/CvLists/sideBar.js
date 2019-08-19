@@ -1,7 +1,19 @@
 import React, {Component, Fragment} from 'react';
+import {connect} from 'react-redux'
+import * as actions from '../../actions'
 import Footer from '../partials/Footer'
 
 class SideBar extends Component{
+      selectResumeTemplates = (e)=>{
+          const dataset = e.target.dataset,
+                category = dataset.category || null,
+                subCategory = dataset.subcategory || null;
+          
+          this.props.typesResumes(category, subCategory,()=>{
+                        console.log(this.props)
+                } 
+           );
+      }
       render(){
           return (
                 <Fragment>
@@ -11,14 +23,14 @@ class SideBar extends Component{
                         <ul className="vertical-nav-menu">
                             <li className="app-sidebar__heading">resume categories</li>
                             <li>
-                                <a href="#">
+                                <a href="#" data-category="business" onClick={this.selectResumeTemplates}>
                                     <i className="metismenu-icon pe-7s-browser"></i>
                                     Business
                                     <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="index.html">
+                                        <a href="#" data-category="business" data-subcategory="analytics" onClick={this.selectResumeTemplates}>
                                             <i className="metismenu-icon">
                                             </i>Analytics
                                         </a>
@@ -304,4 +316,4 @@ class SideBar extends Component{
       }
 }
 
-export default SideBar;
+export default connect(state=>state, actions)(SideBar);

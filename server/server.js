@@ -9,7 +9,7 @@ mongoose.connection.on('error', ()=>{
    throw new Error('unable to connect to database')
 })
 
-import eztController from './controllers/'
+import resumeController from './controllers/'
 import adminController from './controllers/admin_controller'
 import Template from './../template.js'
 
@@ -27,7 +27,7 @@ import devBundle from './devBundle'
 //comment out before building for production
 devBundle.compile(app)
 
-app.use('/api', eztController(express.Router()));
+app.use('/api', resumeController(express.Router()));
 app.use('/api', adminController(express.Router()));
 
 app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
