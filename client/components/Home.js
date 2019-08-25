@@ -8,14 +8,12 @@ import '../assets/main.css'
 class Home extends Component{
       render(){
           return (
-                 <body>
                     <div className="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar fixed-footer">
                        <MainHeader/>
                        <div className="app-main">
                               <ChooseTempalte/>
                        </div>
                     </div>
-                 </body>
           )
       }
 }

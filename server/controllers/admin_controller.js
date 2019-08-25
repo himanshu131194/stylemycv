@@ -1,3 +1,6 @@
+import resumeTypes from '../models/resumeTypes_model'
+import resumeTrack from '../models/resumeTrack_model'
+
 // import resumeTrack from '../models/resumeTrack_model'
 // import CONFIG from '../../config';
 // import fs from 'fs';
@@ -451,6 +454,41 @@ export default (router)=>{
             key: 'working'
          })
     });
+
+        //TEST URL IN INDEX CONTROLLER
+    router.get('/test-index', async (req, res)=>{
+           const result = await resumeTrack.aggregate([
+              { $sort : {category : 1}},
+              { $group: {
+                 _id: "$category",
+                 subCategory: {
+                    $push: "$subCategory"
+                 }
+              }}
+           ]);
+
+           let filtered = result.map((res)=>{
+                return {
+                    category: res._id,
+                    subCategory: res.subCategory
+                }
+           });
+           let k = [];
+           for(let x of filtered){
+               let sub = x.subCategory;
+                   sub = sub.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
+               k.push({
+                    category: x.category,
+                    subCategory: sub  
+               })
+           }
+           //filtered = filtered.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
+           resumeTypes.insertMany(k, function(error, docs) {
+             res.send({
+               docs
+             })
+           });
+    })
 
     return router;
 }

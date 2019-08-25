@@ -12,12 +12,13 @@ import './assets/main.css'
 import MainHeader from './components/partials/MainHeader'
 import Landing from './components/Landing'
 import CvLists from './components/CvLists'
+import CvListsModels from './components/CvLists/Models'
+
 //import Routers from './Routers'
 
 class App extends Component{
       render(){
          return(
-         	<body>
          	  <BrowserRouter>
              <Provider store={applyMiddleware(reduxThunk)(createStore)(reducers)}>
 	            <div className="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
@@ -28,8 +29,8 @@ class App extends Component{
 	               </div>
 	            </div>
               </Provider>
+              <CvListsModels/>
 	          </BrowserRouter>
-            </body>
          )
       }
 }

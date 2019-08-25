@@ -8,5 +8,6 @@ export default {
   	 ACCESS: 'AKIA3YIPQLXVUZ3S3UD7',
   	 SECRET: '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',
   	 PASSWORD: 'WMwQ}t%c(XqR'
-  }
+  },
+  API_URL : "http://localhost:8000"
 }

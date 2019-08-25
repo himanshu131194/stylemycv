@@ -1,4 +1,5 @@
 import resumeTrack from '../models/resumeTrack_model'
+import resumeTypes from '../models/resumeTypes_model'
 import CONFIG from '../../config';
 
 export default (router)=>{
@@ -21,12 +22,19 @@ export default (router)=>{
                result
            })
     });
-    //TEST URL IN INDEX CONTROLLER
-    router.get('/test-index', (req, res)=>{
-           console.log('resume CONTROLLER')
-           res.send({
-               key: 'working'
-           })
-    })
+
+    router.get('/get-resume-categories', async (req, res)=>{
+           try{
+             const result = await resumeTypes.find({});
+             res.status(200).send({
+                 result
+             });
+           }catch(err){
+            res.status(400).send({
+               result
+            })          
+           }
+    });
+
     return router;
 }

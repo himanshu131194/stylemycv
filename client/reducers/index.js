@@ -1,6 +1,7 @@
 import {combineReducers} from 'redux' 
-import {typesResumeReducer} from './data'
+import {typesResumeReducer, resumeCategoriesReducer} from './data'
 
 export default combineReducers({
-	  listResumes: typesResumeReducer
+	  listResumes: typesResumeReducer,
+	  categoriesList: resumeCategoriesReducer
 })
