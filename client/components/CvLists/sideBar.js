@@ -19,6 +19,20 @@ class SideBar extends Component{
                 } 
            );
       }
+      viewSubCategories = (viewSub, category)=>{
+              let k = viewSub.map((subCat)=>{
+                  let subCatMain = subCat.toLowerCase().replace(/[\s\/]/g, '');
+                  return (
+                        <li>
+                            <a href="#" data-category={category} data-subCategory={subCatMain} onClick={this.selectResumeTemplates}>
+                                <i className="metismenu-icon">
+                                </i>{subCat}
+                            </a>
+                        </li>
+                  )
+              })
+              return k;
+      }
       render(){
           return (
                 <Fragment>
@@ -32,23 +46,12 @@ class SideBar extends Component{
                                  return (
                                         <li key={result._id}>
                                             <a href="#" data-category={result.category} data-subCategory="" onClick={this.selectResumeTemplates}>
-                                                <i className="metismenu-icon pe-7s-joy"></i>
-                                                {result.category}
+                                                <i className="metismenu-icon pe-7s-folder"></i>
+                                                {result.categoryView}
                                                 <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                             </a>
                                             <ul>
-                                               {result.subCategory.length>0 && 
-                                                result.subCategory.map((subCat)=>{
-                                                    return (
-                                                            <li>
-                                                                <a href="#" data-category={result.category} data-subCategory={subCat} onClick={this.selectResumeTemplates}>
-                                                                    <i className="metismenu-icon">
-                                                                    </i>{subCat}
-                                                                </a>
-                                                            </li>
-                                                    )
-                                                })
-                                               }
+                                               {result.subCategory.length>0 && this.viewSubCategories(result.subCategoryView, result.category)}
                                             </ul>
                                         </li>
                                  )

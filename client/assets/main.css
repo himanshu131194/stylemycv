@@ -10821,9 +10821,22 @@ a,button,.btn{
 .flex{
    display: flex;
 }
-.modal-cover{
-
+.cursor-pointer{
+   cursor: pointer;
 }
+.resume-loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100000; 
+}
+
+@media (min-width: 992px){
+    .preview-model {
+        min-height: 500px; 
+    }
+}
+
 /*END */
 
 

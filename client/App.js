@@ -28,8 +28,8 @@ class App extends Component{
                       <Route path="/lists" component={CvLists} />
 	               </div>
 	            </div>
-              </Provider>
               <CvListsModels/>
+              </Provider>
 	          </BrowserRouter>
          )
       }

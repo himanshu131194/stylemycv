@@ -7,6 +7,12 @@ const resumeTypes = new mongoose.Schema({
       },
       subCategory: {
          type: []
+      },      
+      categoryView:{
+         type: String
+      },
+      subCategoryView: {
+         type: []
       },
       created: {
          type: Date,

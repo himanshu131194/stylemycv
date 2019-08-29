@@ -457,31 +457,207 @@ export default (router)=>{
 
         //TEST URL IN INDEX CONTROLLER
     router.get('/test-index', async (req, res)=>{
-           const result = await resumeTrack.aggregate([
-              { $sort : {category : 1}},
-              { $group: {
-                 _id: "$category",
-                 subCategory: {
-                    $push: "$subCategory"
-                 }
-              }}
-           ]);
+           // const result = await resumeTrack.aggregate([
+           //    { $sort : {category : 1}},
+           //    { $group: {
+           //       _id: "$category",
+           //       subCategory: {
+           //          $push: "$subCategory"
+           //       }
+           //    }}
+           // ]);
 
-           let filtered = result.map((res)=>{
-                return {
-                    category: res._id,
-                    subCategory: res.subCategory
-                }
-           });
-           let k = [];
-           for(let x of filtered){
-               let sub = x.subCategory;
-                   sub = sub.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
-               k.push({
-                    category: x.category,
-                    subCategory: sub  
-               })
-           }
+           // let filtered = result.map((res)=>{
+           //      return {
+           //          category: res._id,
+           //          subCategory: res.subCategory
+           //      }
+           // });
+           // let k = [];
+           // for(let x of filtered){
+           //     let sub = x.subCategory;
+           //         sub = sub.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
+           //     k.push({
+           //          category: x.category,
+           //          subCategory: sub  
+           //     })
+           // }
+           let k = [
+                        {
+                           "subCategory":[
+                              "civilengineer",
+                              "electricalengineer",
+                              "mechanicalengineer"
+                           ],
+                           "subCategoryView":[
+                              "Civil Engineer",
+                              "Electrical Engineer",
+                              "Mechanical Engineer"
+                           ],
+                           "category":"engineering",
+                           "categoryView":"Engineering"
+                        },
+                        {
+                           "subCategory":[
+                              "publicrelations",
+                              "consulting",
+                              "paralegal",
+                              "logistics",
+                              "military",
+                              "warehouse",
+                              "pilot",
+                              "realestate"
+                           ],
+                           "subCategoryView":[
+                              "Publicrelations",
+                              "Consulting",
+                              "Paralegal",
+                              "Logistics",
+                              "Military",
+                              "Warehouse",
+                              "Pilot",
+                              "Realestate"
+                           ],
+                           "category":"other",
+                           "CategoryView":"Other"
+                        },
+                        {
+                           "subCategory":[
+                              "interiordesign",
+                              "writer",
+                              "artist",
+                              "creative",
+                              "graphicdesign",
+                              "photography"
+                           ],    
+                           "subCategoryView":[
+                              "Interior Design",
+                              "Writer",
+                              "Artist",
+                              "Creative",
+                              "Graphic Design",
+                              "Photography"
+                           ],
+                           "category":"creative",
+                           "categoryView":"Creative"
+                        },
+                        {
+                           "subCategory":[
+                              "customerservice",
+                              "waiterwaitress",
+                              "housekeeping",
+                              "retail",
+                              "callcenter"
+                           ],
+                           "category":"servicehospitality",     
+                           "subCategoryView":[
+                              "Customer Service",
+                              "Waiter / Waitress",
+                              "Housekeeping",
+                              "Retail",
+                              "Call Center"
+                           ],
+                           "categoryView":"Service / Hospitality"
+                        },
+                        {
+                           "subCategory":[
+                              "psychologist",
+                              "professor",
+                              "teacherassistant",
+                              "research",
+                              "teacher"
+                           ],
+                           "category":"education",   
+                           "subCategoryView":[
+                              "Psychologist",
+                              "Professor",
+                              "Teacher Assistant",
+                              "Research",
+                              "Teacher"
+                           ],
+                           "categoryView":"Education"
+                        },
+                        {
+                           "subCategory":[
+                              "medical",
+                              "directcare",
+                              "nursing",
+                              "physician",
+                              "socialwork",
+                              "pharmacist"
+                           ],
+                           "category":"healthcare", 
+                           "subCategoryView":[
+                              "Medical",
+                              "Directcare",
+                              "Nursing",
+                              "Physician",
+                              "Social Work",
+                              "Pharmacist"
+                           ],
+                           "categoryView":"Health Care"
+                        },
+                        {
+                           "subCategory":[
+                              "sales",
+                              "hr",
+                              "marketing",
+                              "accountant",
+                              "banking",
+                              "management",
+                              "investmentbanking",
+                              "administration",
+                              "secretary",
+                              "businessdevelopment",
+                              "executive"
+                           ],
+                           "category":"business",      
+                           "subCategoryView":[
+                              "Sales",
+                              "HR",
+                              "Marketing",
+                              "Accountant",
+                              "Banking",
+                              "Management",
+                              "Investment Banking",
+                              "Administration",
+                              "Secretary",
+                              "Business Development",
+                              "Executive"
+                           ],
+                           "categoryView":"Business"
+                        },
+                        {
+                           "subCategory":[
+                              "technicalsupport",
+                              "projectmanager",
+                              "it",
+                              "softwareengineer"
+                           ],
+                           "category":"itsoftware",
+                           "subCategoryView":[
+                              "Technical Support",
+                              "Project Manager",
+                              "IT",
+                              "Software Engineer"
+                           ],
+                           "categoryView":"IT / Software"
+                        },
+                        {
+                           "subCategory":[
+                              "quantitysurveyor",
+                              "constructionworker",
+                              "sitemanager"
+                           ],
+                           "category":"construction",
+                           "subCategoryView":[
+                              "Quantity Surveyor",
+                              "Construction Worker",
+                              "Site Manager"
+                           ],
+                           "categoryView":"Construction",
+                        }
+                     ];
            //filtered = filtered.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
            resumeTypes.insertMany(k, function(error, docs) {
              res.send({
@@ -492,4 +668,8 @@ export default (router)=>{
 
     return router;
 }
+
+
+
+
 
