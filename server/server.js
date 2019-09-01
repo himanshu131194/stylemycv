@@ -11,6 +11,7 @@ mongoose.connection.on('error', ()=>{
 
 import resumeController from './controllers/'
 import adminController from './controllers/admin_controller'
+import templateController from './controllers/templates_controller'
 import Template from './../template.js'
 
 const app = express();
@@ -29,6 +30,7 @@ devBundle.compile(app)
 
 app.use('/api', resumeController(express.Router()));
 app.use('/api', adminController(express.Router()));
+app.use('/template', templateController(express.Router()));
 
 app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')))
 
