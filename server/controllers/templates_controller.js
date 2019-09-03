@@ -4,10 +4,15 @@ import CONFIG from '../../config';
 
 import executiveResumeExample from '../resumeTemplates/executive-resume-example.js'
 import cfoResumeExample from '../resumeTemplates/cfo-resume-example.js'
+import accountantResumeExample from '../resumeTemplates/business/accountant/accountant-resume-example.js'
+import administrationResumeExample from '../resumeTemplates/business/administration/administration-resume-example.js'
+
 
 const TemplateURLS = {
       "/executive-resume-example" : executiveResumeExample(),
-      "/cfo-resume-example": cfoResumeExample()
+      "/cfo-resume-example": cfoResumeExample(),
+      "/accountant-resume-example": accountantResumeExample(),
+      "/administration-resume-example": administrationResumeExample()
 }
 
 export default (router)=>{
@@ -20,5 +25,12 @@ export default (router)=>{
            res.send(cfoResumeExample());
     });
 
+    router.get('/accountant-resume-example', (req, res)=>{
+       res.send(accountantResumeExample());
+    });
+
+    router.get('/administration-resume-example', (req, res)=>{
+       res.send(administrationResumeExample());
+    });
     return router;
 }

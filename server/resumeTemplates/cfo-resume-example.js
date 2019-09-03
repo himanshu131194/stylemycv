@@ -983,11 +983,11 @@ return `
 <li>National Accounting Honor Society</li>
 </ul></div></div></article></section><div data-bind="add-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"></span></div></div></div></div></div></div>
 
-  <footer class="vcv-footer">
+<footer class="vcv-footer">
   <p>
     <time datetime="2018-04-03T18:22:18Z" pubdate="pubdate" class="updated-at">
-      April 03, 2018
-</time>  </p>
+    </time> 
+  </p>
 </footer>
 
 

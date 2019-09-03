@@ -3,7 +3,7 @@ import resumeTrack from '../models/resumeTrack_model'
 
 // import resumeTrack from '../models/resumeTrack_model'
 // import CONFIG from '../../config';
-// import fs from 'fs';
+import fs from 'fs';
 // import uuid from 'uuid/v4';
 // import AWS from 'aws-sdk'
 // import request from 'request'
@@ -18,8 +18,10 @@ import resumeTrack from '../models/resumeTrack_model'
             ],
             pdf: [
                 "https://www.visualcv.com/accountant-resume-example/pdf"
+            ],
+            template:[
+                "accountant-resume-example"
             ]
-              
        },
        Administration:{
          url : [
@@ -674,12 +676,29 @@ export default (router)=>{
                         }
                      ];
            //filtered = filtered.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
-           resumeTypes.insertMany(k, function(error, docs) {
-             res.send({
-               docs
-             })
-           });
+         //   resumeTypes.insertMany(k, function(error, docs) {
+         //     res.send({
+         //       docs
+         //     })
+         //   });
+         for(let parentJSON  of k){
+             //make categoty
+             fs.mkdirSync(`./server/resumeTemplates/${parentJSON.category}`);
+             for(let sub of parentJSON.subCategory){
+               fs.mkdirSync(`./server/resumeTemplates/${parentJSON.category}/${sub}`);  
+             }
+         }
+         console.log('done!!!')
     })
+
+
+
+    router.get('/generate-template-folders', (req ,res)=>{
+      res.send({
+         key: 'working'
+      })
+    });
+
 
     return router;
 }
