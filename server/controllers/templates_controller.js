@@ -2,28 +2,28 @@ import resumeTrack from '../models/resumeTrack_model'
 import resumeTypes from '../models/resumeTypes_model'
 import CONFIG from '../../config';
 
-import executiveResumeExample from '../resumeTemplates/executive-resume-example.js'
-import cfoResumeExample from '../resumeTemplates/cfo-resume-example.js'
+//import executiveResumeExample from '../resumeTemplates/business/executive/executive-resume-example.js/index.js'
+// import cfoResumeExample from '../resumeTemplates/business/executive/cfo-resume-example.js/index.js'
 import accountantResumeExample from '../resumeTemplates/business/accountant/accountant-resume-example.js'
 import administrationResumeExample from '../resumeTemplates/business/administration/administration-resume-example.js'
 
 
 const TemplateURLS = {
-      "/executive-resume-example" : executiveResumeExample(),
-      "/cfo-resume-example": cfoResumeExample(),
+     // "/executive-resume-example" : executiveResumeExample(),
+      //"/cfo-resume-example": cfoResumeExample(),
       "/accountant-resume-example": accountantResumeExample(),
       "/administration-resume-example": administrationResumeExample()
 }
 
 export default (router)=>{
 
-    router.get('/executive-resume-example', (req, res)=>{
-           res.send(TemplateURLS[req.url]);
-    });
+//     router.get('/executive-resume-example', (req, res)=>{
+//            res.send(TemplateURLS[req.url]);
+//     });
 
-    router.get('/cfo-resume-example', (req, res)=>{
-           res.send(cfoResumeExample());
-    });
+//     router.get('/cfo-resume-example', (req, res)=>{
+//            res.send(cfoResumeExample());
+//     });
 
     router.get('/accountant-resume-example', (req, res)=>{
        res.send(accountantResumeExample());

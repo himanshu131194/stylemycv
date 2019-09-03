@@ -29,6 +29,9 @@ import fs from 'fs';
          ],
          pdf:[
             "https://www.visualcv.com/administration-resume-example/pdf"
+         ],
+         template:[
+            "administration-resume-example"
          ]
        },
        Banking:{
@@ -36,7 +39,16 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/1FKDfb2p6km2g0okuewy0e/ccbc83f53586b5bf85a3fef819801d94/Screen_Shot_2017-01-20_at_2.25.56_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/SFtzqZZu6IgcAM40iMQq0/fc040196c1ad9fb27e45fb98b655e03c/Screen_Shot_2016-09-22_at_3.05.47_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/5fzSwYn8GQ8o6gAUoeC8Yq/536f4c5a404c4dee53a4af1a0a660a73/finance-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
-            "https://images.ctfassets.net/ii3k8n6p1keg/5fzSwYn8GQ8o6gAUoeC8Yq/536f4c5a404c4dee53a4af1a0a660a73/finance-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf:[
+            "https://www.visualcv.com/banking-resume-example/pdf",
+            "https://www.visualcv.com/investment-banking-resume-example/pdf",
+            "https://www.visualcv.com/finance-professional-resume-example/pdf"
+         ],
+         template: [
+            "banking-resume-example",
+            "investment-banking-resume-example",
+            "finance-professional-resume-example"
          ]
        },
        BusinessDevelopment:{
@@ -44,6 +56,16 @@ import fs from 'fs';
              "https://images.ctfassets.net/ii3k8n6p1keg/39EhNGrZG0gKggoAIKoscU/9481ebb41636d917f68b580c8790118c/Screen_Shot_2016-09-23_at_2.48.39_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/4aqT1PNLVeYEI4IMEEacSM/3bda629b7983eca374eaa864cc2d55ed/financial_sales_and_something_officer.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/1uEO5nuAgACOu6SwmsSGEc/41cfd8f22f88cb027c210abc27633ad1/information-technology-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf:[
+            "https://www.visualcv.com/business-development-resume-example/pdf",
+            "https://www.visualcv.com/business-development-resume-cv-example/pdf",
+            "https://www.visualcv.com/business-analyst-resume-example/pdf"
+         ],
+         template:[
+            "business-development-resume-example",
+            "business-development-resume-cv-example",
+            "business-analyst-resume-example"
          ]
        },
        Executive:{
@@ -66,12 +88,32 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/2KtYpjcJlYKeKwmew4ogMa/329cd7ca7158caec0c40ed12cc8a6df0/Screen_Shot_2016-09-23_at_10.17.51_AM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/4TCP7QEEbeOeEAG4AaSMQS/99cf865d4b465bb5433e81080f88a634/senior-hr-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/6EOJNBKBocCIAu0i0As2yg/a12be0d90e8321120db592de9ec95209/hr-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf: [
+            "https://www.visualcv.com/human-resources-resume-example/pdf",
+            "https://www.visualcv.com/administration-resume-example//pdf",
+            "https://www.visualcv.com/hr-department-manager/pdf",
+            "https://www.visualcv.com/hr-executive-resume-example/pdf"
+         ],
+         template: [
+            "human-resources-resume-example",
+            "administration-resume-example",
+            "hr-department-manager",
+            "hr-executive-resume-example"
          ]
        },
        InvestmentBanking:{
          url : [
             "https://images.ctfassets.net/ii3k8n6p1keg/SFtzqZZu6IgcAM40iMQq0/fc040196c1ad9fb27e45fb98b655e03c/Screen_Shot_2016-09-22_at_3.05.47_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/5fzSwYn8GQ8o6gAUoeC8Yq/536f4c5a404c4dee53a4af1a0a660a73/finance-professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf:[
+            "https://www.visualcv.com/investment-banking-resume-example/pdf",
+            "https://www.visualcv.com/finance-professional-resume-example/pdf"
+         ],
+         template:[
+            "investment-banking-resume-example",
+            "finance-professional-resume-example"
          ]
        },
        Management:{
@@ -80,6 +122,12 @@ import fs from 'fs';
            "https://images.ctfassets.net/ii3k8n6p1keg/4SOe84qpDyemgumQw8SO6Q/7f474e0c782653ec982cd82d79527321/Screen_Shot_2017-01-20_at_2.31.42_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
            "https://images.ctfassets.net/ii3k8n6p1keg/27hnqat9oU6Oqg4KC2QeQK/b1d8d8d52427cd4608105124037b0d49/Screen_Shot_2017-01-20_at_3.22.19_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
            "https://images.ctfassets.net/ii3k8n6p1keg/6NtbAt7IcMMSkU4UsWCg6Q/e8c2ea94c08d064adfbffb934cd906f8/Screen_Shot_2017-01-20_at_2.52.02_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf:[
+
+         ],
+         template:[
+            
          ]
        },
        Marketing:{
