@@ -189,6 +189,16 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/2XEGjEqhRKM0segMGOuSWi/c0f6a6ff0704949eec426e4424f65ef8/Screen_Shot_2017-06-28_at_2.55.04_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/5pEbK7N7H2m0SyYY2asSqQ/c1ea27c291a9959333210c7c92ef772d/Screen_Shot_2017-06-28_at_1.40.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/4wdjOUnd8cKUmQSwwqI6cY/fd41514a6d9cfcb1fc64873b4f8b94df/Screen_Shot_2017-01-20_at_2.57.44_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+            "https://www.visualcv.com/artist-resume-example/pdf",
+            "https://www.visualcv.com/graphic-design-resume-example/pdf",
+            "https://www.visualcv.com/interior-designer-resume-example/pdf"
+          ],
+          template:[
+            "artist-resume-example",
+            "graphic-design-resume-example",
+            "interior-designer-resume-example"
           ]
        },
        Creative:{
@@ -196,26 +206,56 @@ import fs from 'fs';
              "https://images.ctfassets.net/ii3k8n6p1keg/5pEbK7N7H2m0SyYY2asSqQ/c1ea27c291a9959333210c7c92ef772d/Screen_Shot_2017-06-28_at_1.40.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/4wdjOUnd8cKUmQSwwqI6cY/fd41514a6d9cfcb1fc64873b4f8b94df/Screen_Shot_2017-01-20_at_2.57.44_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/30RLkQ05xe2kK8GogmKWoG/6751af1bfad059da98f61fc797a51aa8/Screen_Shot_2017-01-20_at_2.43.55_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf:[
+             "https://www.visualcv.com/graphic-design-resume-example/pdf",
+             "https://www.visualcv.com/interior-designer-resume-example/pdf",
+             "https://www.visualcv.com/journalism-resume-example/pdf"
+          ],
+          template:[
+            "graphic-design-resume-example",
+            "interior-designer-resume-example",
+            "journalism-resume-example"
+         ]
        },
        GraphicDesign:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/5pEbK7N7H2m0SyYY2asSqQ/c1ea27c291a9959333210c7c92ef772d/Screen_Shot_2017-06-28_at_1.40.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/graphic-design-resume-example/pdf"
+          ],
+          template:[
+             "graphic-design-resume-example"
           ]
        },
        InteriorDesign:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/4wdjOUnd8cKUmQSwwqI6cY/fd41514a6d9cfcb1fc64873b4f8b94df/Screen_Shot_2017-01-20_at_2.57.44_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf: ["https://www.visualcv.com/interior-designer-resume-example/pdf"],
+          template: ["interior-designer-resume-example"]
        },
        Photography:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/6aKu4FtflCMewaikqU6a4W/e421e28cbb03f3646310289f683cc007/Screen_Shot_2017-11-08_at_3.06.57_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf:[
+            "https://www.visualcv.com/photographer-cv-example/pdf"
+          ],
+          template:[
+            "photographer-cv-example"
+          ],
        },
        Writer:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/30RLkQ05xe2kK8GogmKWoG/6751af1bfad059da98f61fc797a51aa8/Screen_Shot_2017-01-20_at_2.43.55_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+            "https://www.visualcv.com/journalism-resume-example/pdf"
+          ],
+          template:[
+            "journalism-resume-example"
           ]
        }
      },
@@ -223,6 +263,12 @@ import fs from 'fs';
        CallCenter:{
            url: [
                "https://images.ctfassets.net/ii3k8n6p1keg/2dMSZdcUPaE6QMoaW0OUGw/a5a1a7fc91a8fc12bf7b726403993d12/Screen_Shot_2017-01-20_at_3.28.07_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/call-center-agent-resume-example/pdf"
+           ],
+           template:[
+              "call-center-agent-resume-example"
            ]
        },
        CustomerService:{
