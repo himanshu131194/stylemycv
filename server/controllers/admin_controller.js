@@ -124,10 +124,16 @@ import fs from 'fs';
            "https://images.ctfassets.net/ii3k8n6p1keg/6NtbAt7IcMMSkU4UsWCg6Q/e8c2ea94c08d064adfbffb934cd906f8/Screen_Shot_2017-01-20_at_2.52.02_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
          ],
          pdf:[
-
+           "https://www.visualcv.com/management-resume-example/pdf",
+           "https://www.visualcv.com/senior-project-manager-resume-example/pdf",
+           "https://www.visualcv.com/project-management-resume-example/pdf",
+           "https://www.visualcv.com/logistics-manager-resume-example/pdf",
          ],
          template:[
-            
+           "management-resume-example",
+           "senior-project-manager-resume-example",
+           "project-management-resume-example",
+           "logistics-manager-resume-example",
          ]
        },
        Marketing:{
@@ -135,6 +141,16 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/3vpfRZvdZ6SSkI28qSGu4C/106577378def6ab6cb639a252ac28c25/Screen_Shot_2017-01-20_at_3.30.13_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/5qZONqUGHK0G8mikCWGsgI/81028dc3828aad230e0527d7cc4bf02f/Screen_Shot_2016-09-23_at_4.05.07_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/6tWPoMEHjGucgSogiims2C/18fd7a3482aa6a555510473aeddf687f/Screen_Shot_2016-09-23_at_11.36.53_AM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+         ],
+         pdf:[
+            "https://www.visualcv.com/marketing-resume-example/pdf",
+            "https://www.visualcv.com/digital-marketing-resume-example/pdf",
+            "https://www.visualcv.com/marketing-manager-resume-example/pdf"
+         ],
+         template:[
+            "marketing-resume-example",
+            "digital-marketing-resume-example",
+            "marketing-manager-resume-example"
          ]
        },
        Sales:{
@@ -142,11 +158,27 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/nnnkpRX3gWGqu6aEsquEm/fef596948c6d0c072e4bb6f5ef1c6677/Screen_Shot_2017-01-20_at_3.09.50_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/3pACVCskzKIEqqmwoYWW6e/d9c8df1be045f63a2bc9304470ca65a6/Screen_Shot_2017-01-20_at_3.02.00_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/1oMEAh9NxKO0ksc0q8Awc2/a8c5ffaade475ee1302052f37492a373/Screen_Shot_2016-09-23_at_2.07.57_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-         ]
+         ],
+         pdf:[
+            "https://www.visualcv.com/director-of-sales-resume-example/pdf",
+            "https://www.visualcv.com/sales-associate-resume-example/pdf",
+            "https://www.visualcv.com/sales-resume-example/pdf"
+         ],
+          template:[
+            "director-of-sales-resume-example",
+            "sales-associate-resume-example",
+            "sales-resume-example"
+          ]
        },
        Secretary :{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/7mXEJo1yFyueiwq8MowWyk/2f1dbb18dfb58533f8d795e929b96956/Screen_Shot_2017-11-09_at_4.10.10_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/secretary-cv-example/pdf"
+          ],
+          template:[
+             "secretary-cv-example"
           ]
        }
      },
