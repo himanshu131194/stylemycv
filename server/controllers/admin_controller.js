@@ -278,21 +278,53 @@ import fs from 'fs';
                 "https://images.ctfassets.net/ii3k8n6p1keg/1QmUg1koe8WQeUSAwIm2c2/606978de597c43d77e4477180a708886/Screen_Shot_2017-01-20_at_3.00.21_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
                 "https://images.ctfassets.net/ii3k8n6p1keg/1Sj1kzUCLykaYowIw80KM0/d0a99df156e4a2a2ecfbbbcadd02177e/Screen_Shot_2017-01-20_at_2.58.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
                 "https://images.ctfassets.net/ii3k8n6p1keg/4MfwxtCHHG4Aew0Ya8SAO4/a5190ff96ea5ab3ff44ee9249fe0228d/Screen_Shot_2016-11-22_at_9.34.28_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-           ]
+           ],
+           pdf:[
+             "https://www.visualcv.com/judy-watson/pdf",
+             "https://www.visualcv.com/customer-service-resume-example/pdf",
+             "https://www.visualcv.com/entry-level-customer-service-resume-example/pdf",
+             "https://www.visualcv.com/julie-johnson/pdf",
+             "https://www.visualcv.com/customer-service-sales-resume-example/pdf"
+           ],
+           template:[
+            "judy-watson",
+            "customer-service-resume-example",
+            "entry-level-customer-service-resume-example",
+            "julie-johnson",
+            "customer-service-sales-resume-example"
+          ],
        },
        Housekeeping:{
            url: [
                "https://images.ctfassets.net/ii3k8n6p1keg/6LKWXh4aIMgcC4Ygawqcmo/37ce92e8b6b68c6fb041ff397a0075c1/Screen_Shot_2017-01-20_at_2.48.07_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/house-keeping-resume-example/pdf"
+           ],
+           template:[
+            "house-keeping-resume-example"
            ]
        },
        Retail:{
            url: [
               "https://images.ctfassets.net/ii3k8n6p1keg/1r2gES8S7CsqCi4IocooUI/bb2caed34f9b31e4fd9d33bc43b4af22/Screen_Shot_2017-01-20_at_2.53.41_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/retail-resume-example/pdf"
+           ],
+           template:[
+            "retail-resume-example"
            ]
        },
        WaiterWaitress :{
            url: [
               "https://images.ctfassets.net/ii3k8n6p1keg/5EnwM80ItqIUEGg6QcYeYQ/baa9dd7752a8aaa7e3324e0eb3d15be5/Screen_Shot_2017-01-20_at_3.11.26_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/restaurant-resume-example/pdf"
+           ],
+           template:[
+            "restaurant-resume-example"
            ]
        }
      },
@@ -301,16 +333,34 @@ import fs from 'fs';
        CivilEngineer:{
            url:[
               "https://images.ctfassets.net/ii3k8n6p1keg/50bdGcgfFKMg68Y0MSi220/71d1a9c82c6548f75c57702848892f29/Screen_Shot_2016-11-22_at_9.07.49_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/civil-engineer-resume-cv-example/pdf"
+           ],
+           template:[
+            "civil-engineer-resume-cv-example"
            ]
        },
        ElectricalEngineer:{
            url:[
               "https://images.ctfassets.net/ii3k8n6p1keg/3kCwQESREAKaAuoUEOMA4q/1a96d9997720f929332c96538c0121f5/Screen_Shot_2017-06-29_at_2.48.57_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/electrical-engineer-resume-example/pdf"
+           ],
+           template:[
+            "electrical-engineer-resume-example"
            ]
        },
        MechanicalEngineer:{
            url:[
               "https://images.ctfassets.net/ii3k8n6p1keg/E6iehaX9G8UyE08u6WKas/b274cb570c493890bd2480a1538704eb/Screen_Shot_2017-06-27_at_4.01.05_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+           ],
+           pdf:[
+              "https://www.visualcv.com/mechanical-engineer-resume-example/pdf"
+           ],
+           template:[
+            "mechanical-engineer-resume-example"
            ]
        }
      },
@@ -319,16 +369,34 @@ import fs from 'fs';
        ConstructionWorker:{
           url:[
               "https://images.ctfassets.net/ii3k8n6p1keg/1qfk562qZWMemea6QYwaW2/a46bb3205640639cb41ef1727666bbd2/Screen_Shot_2017-01-20_at_2.37.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/construction-resume-example/pdf"
+          ],
+          pdf:[
+            "construction-resume-example"
           ]
        },
        QuantitySurveyor:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/1keb7308cSsIuMyEKqCmeM/90f45f487e236fe04d2e379acede53c2/Screen_Shot_2017-06-29_at_3.40.35_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/quantity-surveyor-resume-example/pdf"
+          ],
+          template:[
+            "quantity-surveyor-resume-example"
           ]
        },
        SiteManager:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/1qfk562qZWMemea6QYwaW2/a46bb3205640639cb41ef1727666bbd2/Screen_Shot_2017-01-20_at_2.37.58_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/construction-resume-example/pdf"
+          ],
+          template:[
+            "construction-resume-example"
           ]
        },
      },
@@ -336,7 +404,16 @@ import fs from 'fs';
      HealthCare:{
        DirectCare:{
           url:[
-              "https://images.ctfassets.net/ii3k8n6p1keg/621ZKYz3YA6eceMSUEEuCS/f1d6f222a2b013d6756f00ff23a6509b/Screen_Shot_2017-01-20_at_3.03.19_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+              "https://images.ctfassets.net/ii3k8n6p1keg/621ZKYz3YA6eceMSUEEuCS/f1d6f222a2b013d6756f00ff23a6509b/Screen_Shot_2017-01-20_at_3.03.19_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
+              "https://images.ctfassets.net/ii3k8n6p1keg/2di8UZAtm0KkWgC2s6wmGi/0ab15b618fa5e7a24f71d2f9dd15135c/Screen_Shot_2016-11-22_at_4.38.54_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/direct-care-working-resume-example/pdf",
+             "https://www.visualcv.com/health-care-provider-resume-example/pdf"
+          ],
+          template:[
+            "direct-care-working-resume-example",
+            "health-care-provider-resume-example"
           ]
        },
        Medical:{
@@ -345,6 +422,18 @@ import fs from 'fs';
               "https://images.ctfassets.net/ii3k8n6p1keg/G7nHY5nDQQq4kM2oKs8Q8/f487311a26ce13913f5c3e19efaafb31/Screen_Shot_2017-01-20_at_2.39.42_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
               "https://images.ctfassets.net/ii3k8n6p1keg/1OicmtSSlWgSqeKuwIiC8Y/e587c7bdb181dfac22a7663a1fe78cf6/Screen_Shot_2016-09-23_at_2.11.05_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
               "https://images.ctfassets.net/ii3k8n6p1keg/4vwzjpJbsc8cKieWi06044/9a22f0d910cfd0dbb5edc8554e227b8d/Screen_Shot_2016-09-23_at_3.53.38_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/nurse-resume-example/pdf",
+             "https://www.visualcv.com/staff-nurse-resume-example/pdf",
+             "https://www.visualcv.com/registered-nurse-resume-example/pdf",
+             "https://www.visualcv.com/public-relations-resume-example/pdf"
+          ],
+          template:[
+             "nurse-resume-example",
+             "staff-nurse-resume-example",
+             "registered-nurse-resume-example",
+             "public-relations-resume-example"
           ]
        },
        Nursing:{
@@ -352,21 +441,49 @@ import fs from 'fs';
               "https://images.ctfassets.net/ii3k8n6p1keg/G7nHY5nDQQq4kM2oKs8Q8/f487311a26ce13913f5c3e19efaafb31/Screen_Shot_2017-01-20_at_2.39.42_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
               "https://images.ctfassets.net/ii3k8n6p1keg/1OicmtSSlWgSqeKuwIiC8Y/e587c7bdb181dfac22a7663a1fe78cf6/Screen_Shot_2016-09-23_at_2.11.05_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
               "https://images.ctfassets.net/ii3k8n6p1keg/15KHoJCsOEEiCcgYsOKugQ/67346d6b6cbfe00296f3ae506e8ccac9/Screen_Shot_2016-09-23_at_3.34.22_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/staff-nurse-resume-example/pdf",
+             "https://www.visualcv.com/registered-nurse-resume-example/pdf",
+             "https://www.visualcv.com/nurse-resume-example/pdf"
+          ],
+          template:[
+             "staff-nurse-resume-example",
+             "registered-nurse-resume-example",
+             "nurse-resume-example"
           ]
        },
        Pharmacist:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/5JlzCKeWxquuG4UQqauyau/687021062dd1eaa371ece7e0a7bfd9e7/Screen_Shot_2017-06-28_at_12.42.16_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/pharmacist-resume-example/pdf"
+          ],
+          template:[
+            "pharmacist-resume-example"
           ]
        },
        Physician:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/4nPUj5uY12qM0Kk2quaucI/809d4853c7def5e4cf01bee4a4ad66f5/physician-cv-example.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/physician-cv-example/pdf"
+          ],
+          template:[
+             "physician-cv-example"
           ]
        },
        SocialWork:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/2N16TM4J4IIOoSOAeQ2UY8/36745d91f9e2590e7bc2b4ad3b72453b/Screen_Shot_2017-11-08_at_4.36.04_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/social-work-cv-example/pdf"
+          ],
+          template:[
+             "social-work-cv-example"
           ]
        }
      },
