@@ -493,6 +493,12 @@ import fs from 'fs';
        it:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/6u0obPKGmA8IMiUOcye0su/ffc6feb6e8d9394c936a1f0b9f59a946/Screen_Shot_2017-01-20_at_3.26.18_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/technical-support-resume-example/pdf"
+          ],
+          template:[
+             "technical-support-resume-example"
           ]
        },
        ProjectManager:{
@@ -500,18 +506,44 @@ import fs from 'fs';
             "https://images.ctfassets.net/ii3k8n6p1keg/27hnqat9oU6Oqg4KC2QeQK/b1d8d8d52427cd4608105124037b0d49/Screen_Shot_2017-01-20_at_3.22.19_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/5pl1BQuVVKkyEIKG8y4GI4/ef8a4c0748c250854b1094712f29fa7c/Screen_Shot_2017-01-20_at_2.33.25_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/4SOe84qpDyemgumQw8SO6Q/7f474e0c782653ec982cd82d79527321/Screen_Shot_2017-01-20_at_2.31.42_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf:[
+             "https://www.visualcv.com/project-management-resume-example/pdf",
+             "https://www.visualcv.com/management-resume-example/pdf",
+             "https://www.visualcv.com/senior-project-manager-resume-example/pdf"
+          ],
+          template:[
+            "project-management-resume-example",
+            "management-resume-example",
+            "senior-project-manager-resume-example"
+         ]
        },
        SoftwareEngineer:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/3bMSiZ1CcgEQEmy4EAiAA6/550b51712cd463b9819b807b51dadd40/Screen_Shot_2017-01-20_at_3.05.40_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/4wFohUf1WwEUugmSoGe4cw/1669ffe504b4474c1487148a7c133193/Screen_Shot_2017-01-20_at_2.22.00_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/software-engineering-resume-example/pdf",
+             "https://www.visualcv.com/software-engineer-resume-example/pdf"
+          ],
+          template:[
+             "software-engineering-resume-example",
+             "software-engineer-resume-example"
           ]
        },
        TechnicalSupport:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/4wFohUf1WwEUugmSoGe4cw/1669ffe504b4474c1487148a7c133193/Screen_Shot_2017-01-20_at_2.22.00_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/6u0obPKGmA8IMiUOcye0su/ffc6feb6e8d9394c936a1f0b9f59a946/Screen_Shot_2017-01-20_at_3.26.18_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/software-engineer-resume-example/pdf",
+             "https://www.visualcv.com/technical-support-resume-example/pdf"
+          ],
+          template:[
+             "software-engineer-resume-example",
+             "technical-support-resume-example"
           ]
        }
      },
@@ -521,28 +553,60 @@ import fs from 'fs';
        Professor:{
           url:[
                "https://images.ctfassets.net/ii3k8n6p1keg/4A0m8N28u4eWGUogEs0EsS/c5546b17f592807ebf3544439242e191/Screen_Shot_2017-06-30_at_3.26.02_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/professor-resume-example/pdf"
+          ],
+          template:[
+             "professor-resume-example"
           ]
        },
        Psychologist:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/5FUUaZxjnaCQmEsu2aIkgC/efac08668069d2e3cd4b6ed6a75c72cc/Screen_Shot_2017-01-20_at_3.08.11_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/psychologist-resume-example/pdf"
+          ],
+          template:[
+             "psychologist-resume-example"
           ]
        },
        Research:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/4lM800VzTyOcK8UsgSO4As/2a6cb7e6424be374a98b7b0c37cbb418/Screen_Shot_2017-11-09_at_3.19.26_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf:[
+             "https://www.visualcv.com/research-cv-example/pdf"
+          ],
+          template:[
+            "research-cv-example"
+         ],
        },
        Teacher:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/2Sp97RTYOIqiYe24maQm0u/6831f0dba4346a6dd54ef3b565384f41/Screen_Shot_2016-11-22_at_10.03.34_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
             "https://images.ctfassets.net/ii3k8n6p1keg/6bkSY0c4SWW0cI4COwaICo/90ffdad7e6c4ad042b46b4c1a03abf07/Screen_Shot_2017-06-29_at_4.48.45_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/principal-resume-example/pdf",
+             "https://www.visualcv.com/teacher-resume-example/pdf"
+          ],
+          template:[
+             "principal-resume-example",
+             "teacher-resume-example"
           ]
        },
        TeacherAssistant:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/eK7Cb9l2cEEUcG0GOGee0/ec9c5fa64eb627ee87524a9132b0b723/Screen_Shot_2017-06-29_at_4.15.09_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
-          ]
+          ],
+          pdf:[
+            "https://www.visualcv.com/teacher-assistant-resume-example/pdf"
+          ],
+          template:[
+            "teacher-assistant-resume-example"
+         ]
        }
      },
 
@@ -551,43 +615,97 @@ import fs from 'fs';
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/1qmNsJy3z2g6kSgMM2qOKo/6b37af9cfe6377fabbad1b8987e3b67b/Screen_Shot_2017-01-20_at_2.56.42_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/iWIwZSkPJeYuI0CIGmmQ4/fe63bd3d0788d2feaa04e7c8ab8b452f/Screen_Shot_2016-09-23_at_2.37.57_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/consulting-resume-example/pdf",
+             "https://www.visualcv.com/healthcare-consulting-resume-example/pdf"
+          ],
+          template:[
+             "consulting-resume-example",
+             "healthcare-consulting-resume-example"
           ]
        },
        Logistics:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/6NtbAt7IcMMSkU4UsWCg6Q/e8c2ea94c08d064adfbffb934cd906f8/Screen_Shot_2017-01-20_at_2.52.02_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/6EHvDxB5ioIIeQyG4aAW0O/c6a10f10f8c15cbbf6175e6660f99784/Screen_Shot_2016-11-22_at_9.50.21_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/logistics-manager-resume-example/pdf",
+             "https://www.visualcv.com/logistics-resume-example/pdf"
+          ],
+          template:[
+             "logistics-manager-resume-example",
+             "logistics-resume-example"
           ]
        },
        Military:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/42seWP1680COMYA4U2SKeQ/f1aa4190a08720044463f4e9a0760438/Screen_Shot_2016-09-23_at_10.26.08_AM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/logistics-resume-example/pdf"
+          ],
+          template:[
+             "logistics-resume-example"
           ]
        },
        Paralegal:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/3mckjBpFeEQiWm8QA0c2iA/c4dff78491507f716c9c2d4492ffec09/Screen_Shot_2017-01-20_at_2.30.20_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80",
              "https://images.ctfassets.net/ii3k8n6p1keg/1BpcoZ1SYgO8oOyKo6Gkew/331dba6b382a9155578322fc0e8a480e/professional.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/paralegal-resume-example/pdf",
+             "https://www.visualcv.com/paralegal-resume-cv-example/pdf"
+          ],
+          template:[
+             "paralegal-resume-example",
+             "paralegal-resume-cv-example"
           ]
        },
        Pilot:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/XkaHCMRIIeGiqgqqSSc/9c6163e0490de7206449bbde463b91ac/Screen_Shot_2017-11-21_at_4.28.07_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/pilot-cv-example/pdf"
+          ],
+          template:[
+             "pilot-cv-example"
           ]
        },
        PublicRelations:{
           url:[
              "https://images.ctfassets.net/ii3k8n6p1keg/4vwzjpJbsc8cKieWi06044/9a22f0d910cfd0dbb5edc8554e227b8d/Screen_Shot_2016-09-23_at_3.53.38_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/public-relations-resume-example/pdf"
+          ],
+          template:[
+             "public-relations-resume-example"
           ]
        },
        RealEstate:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/2NaCHIiYp2AuQgQ6iMwyKW/df90d464702457dc3a4d2846e578161b/Screen_Shot_2017-01-20_at_3.06.47_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/real-estate-resume-example/pdf"
+          ],
+          template:[
+             "real-estate-resume-example"
           ]
        },
        Warehouse:{
           url:[
             "https://images.ctfassets.net/ii3k8n6p1keg/4HTOLdFTDWy6q4Cq6qGykk/f6df2b8cd6f817892ead73b47bdbe6f4/Screen_Shot_2017-01-20_at_2.35.56_PM.png?fit=thumb&f=top&w=360&h=510&fm=jpg&q=80"
+          ],
+          pdf:[
+             "https://www.visualcv.com/warehouse-resume-example/pdf"
+          ],
+          template:[
+             "warehouse-resume-example"
           ]
        }
      }
