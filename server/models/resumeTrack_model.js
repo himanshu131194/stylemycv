@@ -35,6 +35,9 @@ const resumeTrack = new mongoose.Schema({
       subCategory: {
          type: String
       },
+      pdfURL:{
+         type: String
+      },
       templateURL: {
          type: String
       },

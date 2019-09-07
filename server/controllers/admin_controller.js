@@ -1,13 +1,13 @@
 import resumeTypes from '../models/resumeTypes_model'
 import resumeTrack from '../models/resumeTrack_model'
 
-// import resumeTrack from '../models/resumeTrack_model'
-// import CONFIG from '../../config';
+//import resumeTrack from '../models/resumeTrack_model'
+import CONFIG from '../../config';
 import fs from 'fs';
-// import uuid from 'uuid/v4';
-// import AWS from 'aws-sdk'
-// import request from 'request'
-// import rp from 'request-promise'
+import uuid from 'uuid/v4';
+import AWS from 'aws-sdk'
+import request from 'request'
+import rp from 'request-promise'
 
 
    let resumeSamples = {
@@ -373,7 +373,7 @@ import fs from 'fs';
           pdf:[
              "https://www.visualcv.com/construction-resume-example/pdf"
           ],
-          pdf:[
+          template:[
             "construction-resume-example"
           ]
        },
@@ -716,115 +716,143 @@ import fs from 'fs';
 export default (router)=>{
     
     
-//     router.get('/upload-resumes', async (req, res)=>{
+    router.get('/upload-resumes', async (req, res)=>{
 
-//       const s3 = new AWS.S3({
-//             accessKeyId: CONFIG.S3.ACCESS,
-//             secretAccessKey: CONFIG.S3.SECRET
-//             // region: 'ap-south-1'
-//       });
+      const s3 = new AWS.S3({
+            accessKeyId: CONFIG.S3.ACCESS,
+            secretAccessKey: CONFIG.S3.SECRET
+            // region: 'ap-south-1'
+      });
 
-//       //const container = 'resumes';
-//       const s3URL = 'https://stylemycv.s3.ap-south-1.amazonaws.com';
-//       let dataArray = [];
+      const container = 'resumes_pdf';
+      const s3URL = 'https://stylemycv.s3.ap-south-1.amazonaws.com';
+      let dataArray = [];
 
-//       for(let parentFolder in resumeSamples){
+      for(let parentFolder in resumeSamples){
          
-//          let category = parentFolder.toLowerCase();
-//          //fs.mkdirSync(`./${container}/${category}`);
-//          //let parent1 = `./${container}/${category}`;
+         let category = parentFolder.toLowerCase();
+          
+         if(!fs.existsSync(`./${container}/${category}`)){
+            fs.mkdirSync(`./${container}/${category}`);
+         }
+         
+         let parent1 = `./${container}/${category}`;
 
+         let professionals = resumeSamples[parentFolder];
 
-//          let professionals = resumeSamples[parentFolder];
-//          for(let y in professionals){
-//              let subCategory = y.toLowerCase();
-//              //fs.mkdirSync(`${parent1}/${subCategory}`);
-//              //let parent2 = `${parent1}/${subCategory}`;
-//              let resumeArrays = professionals[y].url;
+         for(let y in professionals){
+             let subCategory = y.toLowerCase();
 
+             if(!fs.existsSync(`${parent1}/${subCategory}`)){
+                 fs.mkdirSync(`${parent1}/${subCategory}`);                
+             }
 
-//              for(let z of resumeArrays){
+             let parent2 = `${parent1}/${subCategory}`;
+             let resumeArrays = professionals[y].url;
 
-//                  let dataObj = {};
+             let pdfArr = professionals[y].pdf;
+             let templateArr = professionals[y].template;
+
+             let count = 0;
+             for(let z of resumeArrays){
+
+                 let dataObj = {};
                  
-//                  dataObj['resumeImage'] ={} ;dataObj['resumeImage']['thumbnail'] = {};
-//                  dataObj['resumeImage']['original'] = {};
+                 dataObj['resumeImage'] ={} ;dataObj['resumeImage']['thumbnail'] = {};
+                 dataObj['resumeImage']['original'] = {};
 
-//                  let slugId = uuid();
-//                  let a = z;
-//                  let imgarray = a.split('?');
-//                  let original = imgarray[0];
-//                  let ext = original.split('.').pop();
-//                  let thumbnail = z;
+                 let slugId = uuid();
+                 let a = z;
+                 let imgarray = a.split('?');
+                 let original = imgarray[0];
+                 let ext = original.split('.').pop();
+                 let thumbnail = z;
 
+                 let resumePDF = pdfArr[resumeArrays.indexOf(z)];
+                 let resumeTemplate = templateArr[resumeArrays.indexOf(z)];
 
-//                  //dataObj creattion
-//                  dataObj['resumeImage']['thumbnail']['name'] = `${slugId}_thumbnail.${ext}`
-//                  dataObj['resumeImage']['original']['name'] = `${slugId}_original.${ext}`
+                 //dataObj creattion
+                 dataObj['resumeImage']['thumbnail']['name'] = `${slugId}_thumbnail.${ext}`
+                 dataObj['resumeImage']['original']['name'] = `${slugId}_original.${ext}`
 
-//                  dataObj['resumeImage']['thumbnail']['mime'] = `image/${ext}`
-//                  dataObj['resumeImage']['original']['mime'] = `image/${ext}`
+                 dataObj['resumeImage']['thumbnail']['mime'] = `image/${ext}`
+                 dataObj['resumeImage']['original']['mime'] = `image/${ext}`
 
-//                  dataObj['resumeImage']['thumbnail']['url'] = `${category}/${subCategory}/${slugId}_thumbnail.${ext}`
-//                  dataObj['resumeImage']['original']['url'] = `${category}/${subCategory}/${slugId}_original.${ext}`
+                 dataObj['resumeImage']['thumbnail']['url'] = `${category}/${subCategory}/${slugId}_thumbnail.${ext}`
+                 dataObj['resumeImage']['original']['url'] = `${category}/${subCategory}/${slugId}_original.${ext}`
      
+                 dataObj['s3URL']  = s3URL;
+                 dataObj['templateID']  = slugId;
+                 dataObj['category']  = category;
+                 dataObj['subCategory']  = subCategory;
+                 dataObj['s3Bucket'] = CONFIG.S3.BUCKET;
+                 dataObj['templateURL']  = `${parent2}/${resumeTemplate}.js`;
 
-//                  dataObj['s3URL']  = s3URL;
-//                  dataObj['templateID']  = slugId;
-//                  dataObj['category']  = category;
-//                  dataObj['subCategory']  = subCategory;
-//                  dataObj['s3Bucket'] = CONFIG.S3.BUCKET;
-//                  dataObj['templateURL']  = `/${slugId}.html`;
+                 dataObj['pdfURL'] = `${category}/${subCategory}/pdf/${slugId}.pdf`;
 
-//                  let resImage = await rp({
-//                      uri: original,
-//                      encoding: null
-//                  });
-//                  let resImageThumb = await rp({
-//                      uri: thumbnail,
-//                      encoding: null
-//                  });
-//                  //fs.writeFileSync(`${parent2}/${slugId}_original.${ext}`, resImage);
-//                  //fs.writeFileSync(`${parent2}/${slugId}_thumbnail.${ext}`, resImageThumb);
+                 let resImage = await rp({
+                     uri: original,
+                     encoding: null
+                 });
+                 let resImageThumb = await rp({
+                     uri: thumbnail,
+                     encoding: null
+                 });
+                 let resImagePdf = await rp({
+                     uri: resumePDF,
+                     encoding: null
+                 });
+                 fs.writeFileSync(`${parent2}/${resumeTemplate}.js`, '');
+                 //fs.writeFileSync(`${parent2}/${slugId}_thumbnail.${ext}`, resImageThumb);
                 
-//                  //thumb
-//                  const paramsThumb = {
-//                    Bucket: CONFIG.S3.BUCKET,
-//                    Key: `${category}/${subCategory}/${slugId}_thumbnail.${ext}`,
-//                    Body: resImageThumb,
-//                    ContentType: `image/${ext}`
-//                  }
-//                  await s3.putObject(paramsThumb).promise(); 
+                 //thumb
+                 const paramsThumb = {
+                   Bucket: CONFIG.S3.BUCKET,
+                   Key: `${category}/${subCategory}/${slugId}_thumbnail.${ext}`,
+                   Body: resImageThumb,
+                   ContentType: `image/${ext}`
+                 }
+                 await s3.putObject(paramsThumb).promise(); 
 
-//                  //original
-//                  const params = {
-//                    Bucket: CONFIG.S3.BUCKET,
-//                    Key: `${category}/${subCategory}/${slugId}_original.${ext}`,
-//                    Body: resImage,
-//                    ContentType: `image/${ext}`
-//                  }
-//                  await s3.putObject(params).promise(); 
+                 //original
+                 const params = {
+                   Bucket: CONFIG.S3.BUCKET,
+                   Key: `${category}/${subCategory}/${slugId}_original.${ext}`,
+                   Body: resImage,
+                   ContentType: `image/${ext}`
+                 }
+                 await s3.putObject(params).promise(); 
 
+                 //pdf
+                 const paramsPdf = {
+                  Bucket: CONFIG.S3.BUCKET,
+                  Key: `${category}/${subCategory}/pdf/${slugId}.pdf`,
+                  Body: resImagePdf,
+                  ContentType: `application/pdf`
+                 }
+                 await s3.putObject(paramsPdf).promise(); 
 
-//                  dataArray.push(dataObj);
+                 dataArray.push(dataObj);
+
+                 ++count;
+                 console.log(count);
              
-//              }
+             }
+
+         }
+
+     }
 
 
-//          }
-
-//      }
-
-
-//     resumeTrack.insertMany(dataArray, function(error, docs) {
-//            res.send({
-//                docs
-//            })
-//     });
-//            //const dataResult = await resumeTrack.inserMany(dataArray);
+    resumeTrack.insertMany(dataArray, function(error, docs) {
+           res.send({
+               docs
+           })
+    });
+           //const dataResult = await resumeTrack.inserMany(dataArray);
 
 
-//     })
+    })
 
 
     router.get('/test-admin', (req ,res)=>{
