@@ -20,6 +20,11 @@ import hrdepartmentmanagerResumeExample from '../resumeTemplates/business/hr/hr-
 import hrexecutiveResumeExample from '../resumeTemplates/business/hr/hr-executive-resume-example.js';
 
 
+import digitalmarketingResumeExample from '../resumeTemplates/business/marketing/digital-marketing-resume-example.js';
+import marketingmanagerResumeExample from '../resumeTemplates/business/marketing/marketing-manager-resume-example.js';
+import marketingResumeExample from '../resumeTemplates/business/marketing/marketing-resume-example.js';
+
+
 const TemplateURLS = {
      // "/executive-resume-example" : executiveResumeExample(),
       //"/cfo-resume-example": cfoResumeExample(),
@@ -87,7 +92,17 @@ export default (router)=>{
     router.get('/hr-executive-resume-example', (req, res)=>{
        res.send(hrexecutiveResumeExample());
     });
+    
+    router.get('/digital-marketing-resume-example', (req, res)=>{
+       res.send(digitalmarketingResumeExample());
+    });
 
- 
+    router.get('/marketing-manager-resume-example', (req, res)=>{
+       res.send(marketingmanagerResumeExample());
+    });
+
+    router.get('/marketing-resume-example', (req, res)=>{
+       res.send(marketingResumeExample());
+    });
     return router;
 }
