@@ -2,6 +2,9 @@ import resumeTrack from '../models/resumeTrack_model'
 import resumeTypes from '../models/resumeTypes_model'
 import CONFIG from '../../config';
 
+import request from 'request'
+import rp from 'request-promise'
+
 export default (router)=>{
 
     router.post('/get-resume-samples', async (req, res)=>{
@@ -16,8 +19,6 @@ export default (router)=>{
 
            const result = await resumeTrack.find(queryFilter);
            
-           console.log(result)
-
            res.status(200).send({
                result
            })
@@ -34,6 +35,16 @@ export default (router)=>{
                result
             })          
            }
+    });
+
+
+    router.get('/download-resume', async (req, res)=>{
+        let {bucketURL, pdfURL} =  req.query;
+        let pdf = await rp({
+            uri: `${bucketURL}/${pdfURL}`,
+            encoding: null
+        });
+  	    res.send(pdf);
     });
 
     return router;

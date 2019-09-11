@@ -786,8 +786,8 @@ export default (router)=>{
                  dataObj['category']  = category;
                  dataObj['subCategory']  = subCategory;
                  dataObj['s3Bucket'] = CONFIG.S3.BUCKET;
-                 dataObj['templateURL']  = `${parent2}/${resumeTemplate}.js`;
-
+                 dataObj['templateURL']  = `${category}/${subCategory}/${resumeTemplate}.js`;
+                 dataObj['templateName']  = `${resumeTemplate}`;
                  dataObj['pdfURL'] = `${category}/${subCategory}/pdf/${slugId}.pdf`;
 
                  let resImage = await rp({
@@ -849,7 +849,7 @@ export default (router)=>{
                docs
            })
     });
-           //const dataResult = await resumeTrack.inserMany(dataArray);
+           const dataResult = await resumeTrack.inserMany(dataArray);
 
 
     })

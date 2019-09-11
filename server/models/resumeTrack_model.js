@@ -41,6 +41,9 @@ const resumeTrack = new mongoose.Schema({
       templateURL: {
          type: String
       },
+      templateName: {
+         type: String
+      },
       created: {
          type: Date,
          default: Date.now

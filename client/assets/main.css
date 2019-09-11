@@ -10801,6 +10801,10 @@ a,button,.btn{
 
 /*CUSTOM ADDED CLASSES*/
 
+.color-fff{
+    color: #fff !important;
+ }
+
 /*  resume landing image*/
 .demo-image-bg{
   height: auto;
@@ -10829,6 +10833,15 @@ a,button,.btn{
     top: 50%;
     left: 50%;
     z-index: 100000; 
+}
+
+.download-resume-loader{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.ball-pulse>div{
+    background-color: rgb(63, 106, 216);
 }
 
 @media (min-width: 992px){
