@@ -24,6 +24,14 @@ import digitalmarketingResumeExample from '../resumeTemplates/business/marketing
 import marketingmanagerResumeExample from '../resumeTemplates/business/marketing/marketing-manager-resume-example.js';
 import marketingResumeExample from '../resumeTemplates/business/marketing/marketing-resume-example.js';
 
+import executiveResumeExample from '../resumeTemplates/business/executive/executive-resume-example.js';
+import cfoResumeExample from '../resumeTemplates/business/executive/cfo-resume-example.js';
+
+import businessdevelopmentResumeExample from '../resumeTemplates/business/businessdevelopment/business-development-resume-example.js';
+import businessdevelopmentcvResumeExample from '../resumeTemplates/business/businessdevelopment/business-development-resume-cv-example.js';
+import businessanalystcvResumeExample from '../resumeTemplates/business/businessdevelopment/business-analyst-resume-example.js';
+
+
 
 const TemplateURLS = {
      // "/executive-resume-example" : executiveResumeExample(),
@@ -104,5 +112,27 @@ export default (router)=>{
     router.get('/marketing-resume-example', (req, res)=>{
        res.send(marketingResumeExample());
     });
+
+    router.get('/executive-resume-example', (req, res)=>{
+       res.send(executiveResumeExample());
+    });
+
+    router.get('/cfo-resume-example', (req, res)=>{
+       res.send(cfoResumeExample());
+    });
+
+    router.get('/business-development-resume-example', (req, res)=>{
+       res.send(businessdevelopmentResumeExample());
+    });
+    
+    router.get('/business-development-resume-cv-example', (req, res)=>{
+       res.send(businessdevelopmentcvResumeExample());
+    });
+
+    router.get('/business-analyst-resume-example', (req, res)=>{
+       res.send(businessanalystcvResumeExample());
+    });
+    
+
     return router;
 }
