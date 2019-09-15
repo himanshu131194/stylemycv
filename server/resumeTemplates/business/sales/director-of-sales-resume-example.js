@@ -358,7 +358,7 @@ export default ()=>{
 
 <body data-cv-id="4942947" class="cv-viewer">
 
-    <header class="row centered">
+    <header class="row centered vcv-header">
         
     </header>
 

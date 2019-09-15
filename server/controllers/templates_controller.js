@@ -31,14 +31,40 @@ import businessdevelopmentResumeExample from '../resumeTemplates/business/busine
 import businessdevelopmentcvResumeExample from '../resumeTemplates/business/businessdevelopment/business-development-resume-cv-example.js';
 import businessanalystcvResumeExample from '../resumeTemplates/business/businessdevelopment/business-analyst-resume-example.js';
 
+import managementResumeExample from '../resumeTemplates/business/management/management-resume-example.js';
+import logisticsmanagerResumeExample from '../resumeTemplates/business/management/logistics-manager-resume-example.js';
+import seniorprojectmanagerResumeExample from '../resumeTemplates/business/management/senior-project-manager-resume-example.js';
+import projectmanagementResumeExample from '../resumeTemplates/business/management/project-management-resume-example.js';
+
+import secretarycvResumeExample from '../resumeTemplates/business/secretary/secretary-cv-example.js';
+
+// import investmentbankingResumeExample from '../resumeTemplates/business/investmentbanking/investment-banking-resume-example.js';
+// import financeprofessionalResumeExample from '../resumeTemplates/business/investmentbanking/finance-professional-resume-example.js';
+
+import constructionResumeExample from '../resumeTemplates/construction/constructionworker/construction-resume-example.js';
+import quantitysurveyorResumeExample from '../resumeTemplates/construction/quantitysurveyor/quantity-surveyor-resume-example.js';
+import sitemanagerResumeExample from '../resumeTemplates/construction/sitemanager/site-manager-resume-example.js';
+
+import ittechnicalsupportResumeExample from '../resumeTemplates/itsoftware/it/technical-support-resume-example.js';
+import itmanagementResumeExample from '../resumeTemplates/itsoftware/projectmanager/management-resume-example.js';
+import itprojectmanagementResumeExample from '../resumeTemplates/itsoftware/projectmanager/project-management-resume-example.js';
+import itseniorprojectmanagerResumeExample from '../resumeTemplates/itsoftware/projectmanager/senior-project-manager-resume-example.js';
+
+import softwareengineerResumeExample from '../resumeTemplates/itsoftware/softwareengineer/software-engineer-resume-example.js';
+import softwareengineeringResumeExample from '../resumeTemplates/itsoftware/softwareengineer/software-engineering-resume-example.js';
+
+import technicalsupportsoftwareengineerResumeExample from '../resumeTemplates/itsoftware/technicalsupport/software-engineer-resume-example.js';
+import technicalsupportResumeExample from '../resumeTemplates/itsoftware/technicalsupport/technical-support-resume-example.js';
 
 
-const TemplateURLS = {
-     // "/executive-resume-example" : executiveResumeExample(),
-      //"/cfo-resume-example": cfoResumeExample(),
-      "/accountant-resume-example": accountantResumeExample(),
-      "/administration-resume-example": administrationResumeExample()
-}
+import psychologistResumeExample from '../resumeTemplates/education/psychologist/psychologist-resume-example.js';
+import professorResumeExample from '../resumeTemplates/education/professor/professor-resume-example.js';
+import researchcvResumeExample from '../resumeTemplates/education/research/research-cv-example.js';
+import teacherassistantResumeExample from '../resumeTemplates/education/teacherassistant/teacher-assistant-resume-example.js';
+import principalResumeExample from '../resumeTemplates/education/teacher/principal-resume-example.js';
+import teacherResumeExample from '../resumeTemplates/education/teacher/teacher-resume-example.js';
+
+
 
 export default (router)=>{
 
@@ -49,6 +75,78 @@ export default (router)=>{
 //   router.get('/cfo-resume-example', (req, res)=>{
 //            res.send(cfoResumeExample());
 //   });
+
+    router.get('/principal-resume-example', (req, res)=>{
+       res.send(principalResumeExample());
+    });
+
+    router.get('/teacher-resume-example', (req, res)=>{
+       res.send(teacherResumeExample());
+    });
+
+
+    router.get('/teacher-assistant-resume-example', (req, res)=>{
+       res.send(teacherassistantResumeExample());
+    });
+
+    router.get('/research-cv-example', (req, res)=>{
+       res.send(researchcvResumeExample());
+    });
+
+
+    router.get('/professor-resume-example', (req, res)=>{
+       res.send(professorResumeExample());
+    });
+
+    router.get('/psychologist-resume-example', (req, res)=>{
+       res.send(psychologistResumeExample());
+    });
+
+    router.get('/technical-support-software-engineering-resume-example', (req, res)=>{
+       res.send(technicalsupportsoftwareengineerResumeExample());
+    });
+
+    router.get('/technical-support-resume-example', (req, res)=>{
+       res.send(technicalsupportResumeExample());
+    });
+
+    router.get('/software-engineering-resume-example', (req, res)=>{
+       res.send(softwareengineeringResumeExample());
+    });
+
+    router.get('/software-engineer-resume-example', (req, res)=>{
+       res.send(softwareengineerResumeExample());
+    });
+
+    router.get('/it-technical-support-resume-example', (req, res)=>{
+       res.send(ittechnicalsupportResumeExample());
+    });
+
+    router.get('/it-management-resume-example', (req, res)=>{
+       res.send(itmanagementResumeExample());
+    });
+
+    router.get('/it-project-management-resume-example', (req, res)=>{
+       res.send(itprojectmanagementResumeExample());
+    });
+
+    router.get('/it-senior-project-manager-resume-example', (req, res)=>{
+       res.send(itseniorprojectmanagerResumeExample());
+    });
+
+
+    router.get('/construction-resume-example', (req, res)=>{
+       res.send(constructionResumeExample());
+    });
+
+    router.get('/quantity-surveyor-resume-example', (req, res)=>{
+       res.send(quantitysurveyorResumeExample());
+    });
+
+    router.get('/site-manager-resume-example', (req, res)=>{
+       res.send(sitemanagerResumeExample());
+    });
+
 
     router.get('/accountant-resume-example', (req, res)=>{
        res.send(accountantResumeExample());
@@ -132,7 +230,39 @@ export default (router)=>{
     router.get('/business-analyst-resume-example', (req, res)=>{
        res.send(businessanalystcvResumeExample());
     });
+
+    router.get('/management-resume-example', (req, res)=>{
+       res.send(managementResumeExample());
+    });
+    
+    router.get('/logistics-manager-resume-example', (req, res)=>{
+       res.send(logisticsmanagerResumeExample());
+    });
+
+    router.get('/senior-project-manager-resume-example', (req, res)=>{
+       res.send(seniorprojectmanagerResumeExample());
+    });
+
+    router.get('/project-management-resume-example', (req, res)=>{
+       res.send(projectmanagementResumeExample());
+    });
+   
+    router.get('/secretary-cv-example', (req, res)=>{
+       res.send(secretarycvResumeExample());
+    });
+
+
+
     
 
+//     router.get('/investment-banking-resume-example', (req, res)=>{
+//        res.send(investmentbankingResumeExample());
+//     });
+
+//     router.get('/finance-professional-resume-example', (req, res)=>{
+//        res.send(financeprofessionalResumeExample());
+//     });
+    
+    
     return router;
 }
