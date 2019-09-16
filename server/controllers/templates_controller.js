@@ -66,6 +66,13 @@ import teacherResumeExample from '../resumeTemplates/education/teacher/teacher-r
 
 
 
+import artistResumeExample from '../resumeTemplates/creative/artist/artist-resume-example.js';
+import graphicdesignResumeExample from '../resumeTemplates/creative/artist/graphic-design-resume-example.js';
+import interiordesignResumeExample from '../resumeTemplates/creative/artist/interior-designer-resume-example.js';
+import journalismResumeExample from '../resumeTemplates/creative/creative/journalism-resume-example.js';
+import photographerResumeExample from '../resumeTemplates/creative/photography/photographer-cv-example.js';
+
+
 export default (router)=>{
 
 //   router.get('/executive-resume-example', (req, res)=>{
@@ -75,6 +82,33 @@ export default (router)=>{
 //   router.get('/cfo-resume-example', (req, res)=>{
 //            res.send(cfoResumeExample());
 //   });
+
+
+
+
+
+
+router.get('/artist-resume-example', (req, res)=>{
+   res.send(artistResumeExample());
+});    
+router.get('/graphic-design-resume-example', (req, res)=>{
+   res.send(graphicdesignResumeExample());
+});
+router.get('/interior-designer-resume-example', (req, res)=>{
+   res.send(interiordesignResumeExample());
+});
+
+router.get('/journalism-resume-example', (req, res)=>{
+   res.send(journalismResumeExample());
+});
+
+router.get('/photographer-cv-example', (req, res)=>{
+   res.send(photographerResumeExample());
+});
+
+
+
+
 
     router.get('/principal-resume-example', (req, res)=>{
        res.send(principalResumeExample());
