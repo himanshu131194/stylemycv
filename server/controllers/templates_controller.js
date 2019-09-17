@@ -72,6 +72,15 @@ import interiordesignResumeExample from '../resumeTemplates/creative/artist/inte
 import journalismResumeExample from '../resumeTemplates/creative/creative/journalism-resume-example.js';
 import photographerResumeExample from '../resumeTemplates/creative/photography/photographer-cv-example.js';
 
+import directcareworkingResumeExample from'../resumeTemplates/healthcare/directcare/direct-care-working-resume-example'
+import healthcareproviderResumeExample from '../resumeTemplates/healthcare/directcare/health-care-provider-resume-example'
+import nurseResumeExample from '../resumeTemplates/healthcare/medical/nurse-resume-example'
+import publicrelationsResumeExample from '../resumeTemplates/healthcare/medical/public-relations-resume-example'
+import registerednurseResumeExample from '../resumeTemplates/healthcare/medical/registered-nurse-resume-example'
+import staffnurseResumeExample from '../resumeTemplates/healthcare/medical/staff-nurse-resume-example'
+import pharmacistResumeExample from '../resumeTemplates/healthcare/pharmacist/pharmacist-resume-example'
+import physicianResumeExample from '../resumeTemplates/healthcare/physician/physician-cv-example'
+import socialworkResumeExample from '../resumeTemplates/healthcare/socialwork/social-work-cv-example'
 
 export default (router)=>{
 
@@ -84,6 +93,34 @@ export default (router)=>{
 //   });
 
 
+
+router.get('/direct-care-working-resume-example', (req, res)=>{
+   res.send(directcareworkingResumeExample());
+});    
+router.get('/health-care-provider-resume-example', (req, res)=>{
+   res.send(healthcareproviderResumeExample());
+});    
+router.get('/nurse-resume-example', (req, res)=>{
+   res.send(nurseResumeExample());
+});    
+router.get('/public-relations-resume-example', (req, res)=>{
+   res.send(publicrelationsResumeExample());
+}); 
+router.get('/registered-nurse-resume-example', (req, res)=>{
+   res.send(registerednurseResumeExample());
+}); 
+router.get('/staff-nurse-resume-example', (req, res)=>{
+   res.send(staffnurseResumeExample());
+}); 
+router.get('/pharmacist-resume-example', (req, res)=>{
+   res.send(pharmacistResumeExample());
+}); 
+router.get('/physician-cv-example', (req, res)=>{
+   res.send(physicianResumeExample());
+}); 
+router.get('/social-work-cv-example', (req, res)=>{
+   res.send(socialworkResumeExample());
+}); 
 
 
 
