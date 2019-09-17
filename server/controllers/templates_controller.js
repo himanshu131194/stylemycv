@@ -82,6 +82,12 @@ import pharmacistResumeExample from '../resumeTemplates/healthcare/pharmacist/ph
 import physicianResumeExample from '../resumeTemplates/healthcare/physician/physician-cv-example'
 import socialworkResumeExample from '../resumeTemplates/healthcare/socialwork/social-work-cv-example'
 
+
+import civilengineerResumeExample from '../resumeTemplates/engineering/civilengineer/civil-engineer-resume-cv-example'
+import electricalengineerResumeExample from '../resumeTemplates/engineering/electricalengineer/electrical-engineer-resume-example'
+import mechanicalengineerResumeExample from '../resumeTemplates/engineering/mechanicalengineer/mechanical-engineer-resume-example'
+
+
 export default (router)=>{
 
 //   router.get('/executive-resume-example', (req, res)=>{
@@ -91,7 +97,15 @@ export default (router)=>{
 //   router.get('/cfo-resume-example', (req, res)=>{
 //            res.send(cfoResumeExample());
 //   });
-
+router.get('/civil-engineer-resume-cv-example', (req, res)=>{
+   res.send(civilengineerResumeExample());
+});    
+router.get('/electrical-engineer-resume-example', (req, res)=>{
+   res.send(electricalengineerResumeExample());
+});    
+router.get('/mechanical-engineer-resume-example', (req, res)=>{
+   res.send(mechanicalengineerResumeExample());
+});  
 
 
 router.get('/direct-care-working-resume-example', (req, res)=>{
