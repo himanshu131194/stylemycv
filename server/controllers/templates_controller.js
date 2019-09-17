@@ -87,6 +87,16 @@ import civilengineerResumeExample from '../resumeTemplates/engineering/civilengi
 import electricalengineerResumeExample from '../resumeTemplates/engineering/electricalengineer/electrical-engineer-resume-example'
 import mechanicalengineerResumeExample from '../resumeTemplates/engineering/mechanicalengineer/mechanical-engineer-resume-example'
 
+import callcenteragentResumeExample from '../resumeTemplates/servicehospitality/callcenter/call-center-agent-resume-example'
+import customerserviceResumeExample from '../resumeTemplates/servicehospitality/customerservice/customer-service-resume-example'
+import customerservicesalesResumeExample from '../resumeTemplates/servicehospitality/customerservice/customer-service-sales-resume-example'
+import entrylevelcustomerserviceResumeExample from '../resumeTemplates/servicehospitality/customerservice/entry-level-customer-service-resume-example'
+import judywatsonResumeExample from '../resumeTemplates/servicehospitality/customerservice/judy-watson'
+import juliejohnsonResumeExample from '../resumeTemplates/servicehospitality/customerservice/julie-johnson'
+import housekeepingResumeExample from '../resumeTemplates/servicehospitality/housekeeping/house-keeping-resume-example'
+import retailResumeExample from '../resumeTemplates/servicehospitality/retail/retail-resume-example'
+import restaurantResumeExample from '../resumeTemplates/servicehospitality/waiterwaitress/restaurant-resume-example'
+
 
 export default (router)=>{
 
@@ -97,6 +107,36 @@ export default (router)=>{
 //   router.get('/cfo-resume-example', (req, res)=>{
 //            res.send(cfoResumeExample());
 //   });
+
+router.get('/call-center-agent-resume-example', (req, res)=>{
+   res.send(callcenteragentResumeExample());
+}); 
+router.get('/customer-service-resume-example', (req, res)=>{
+   res.send(customerserviceResumeExample());
+}); 
+router.get('/customer-service-sales-resume-example', (req, res)=>{
+   res.send(customerservicesalesResumeExample());
+}); 
+router.get('/judy-watson', (req, res)=>{
+   res.send(judywatsonResumeExample());
+}); 
+router.get('/julie-johnson', (req, res)=>{
+   res.send(juliejohnsonResumeExample());
+}); 
+router.get('/house-keeping-resume-example', (req, res)=>{
+   res.send(housekeepingResumeExample());
+}); 
+router.get('/entry-level-customer-service-resume-example', (req, res)=>{
+   res.send(entrylevelcustomerserviceResumeExample());
+}); 
+router.get('/retail-resume-example', (req, res)=>{
+   res.send(retailResumeExample());
+}); 
+router.get('/restaurant-resume-example', (req, res)=>{
+   res.send(restaurantResumeExample());
+}); 
+
+
 router.get('/civil-engineer-resume-cv-example', (req, res)=>{
    res.send(civilengineerResumeExample());
 });    
