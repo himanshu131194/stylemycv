@@ -14,7 +14,6 @@ export default ()=>{
     <meta name="description" content="SERVICE QUALITY DEVELOPMENT | QUALITY CONTROL | BUSINESS MANAGEMENT">
     <meta name="author" content="StyleMyCV.com">
     <meta name="robots" content="noindex, nofollow">
-
     <link rel="canonical" href="index.html">
     <link rel="alternate" hreflang="x-default" href="index.html" />
     <link rel="alternate" hreflang="en" href="index.html" />

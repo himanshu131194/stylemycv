@@ -97,6 +97,17 @@ import housekeepingResumeExample from '../resumeTemplates/servicehospitality/hou
 import retailResumeExample from '../resumeTemplates/servicehospitality/retail/retail-resume-example'
 import restaurantResumeExample from '../resumeTemplates/servicehospitality/waiterwaitress/restaurant-resume-example'
 
+import consultingResumeExample from  '../resumeTemplates/others/consulting/consulting-resume-example'
+import healthcareconsultingResumeExample from '../resumeTemplates/others/consulting/healthcare-consulting-resume-example'
+import logisticsmanagerResumeExample from '../resumeTemplates/others/logistics/logistics-manager-resume-example'
+import logisticsResumeExample from '../resumeTemplates/others/logistics/logistics-resume-example'
+import paralegalcvResumeExample from '../resumeTemplates/others/paralegal/paralegal-resume-cv-example'
+import paralegalResumeExample from '../resumeTemplates/others/paralegal/paralegal-resume-example'
+import pilotResumeExample from '../resumeTemplates/others/pilot/pilot-cv-resume-example'
+import publicrelationsResumeExample from '../resumeTemplates/others/publicrelations/public-relations-resume-example'
+import realestateResumeExample from '../resumeTemplates/others/realestate/real-estate-resume-example'
+import warehouseResumeExample from '../resumeTemplates/others/warehouse/warehouse-resume-example'
+
 
 export default (router)=>{
 
@@ -107,6 +118,46 @@ export default (router)=>{
 //   router.get('/cfo-resume-example', (req, res)=>{
 //            res.send(cfoResumeExample());
 //   });
+
+
+router.get('/consulting-resume-example', (req, res)=>{
+   res.send(consultingResumeExample());
+}); 
+router.get('/healthcare-consulting-resume-example', (req, res)=>{
+   res.send(healthcareconsultingResumeExample());
+}); 
+router.get('/logistics-manager-resume-example', (req, res)=>{
+   res.send(logisticsmanagerResumeExample());
+}); 
+router.get('/logistics-resume-example', (req, res)=>{
+   res.send(logisticsResumeExample());
+}); 
+router.get('/paralegal-resume-cv-example', (req, res)=>{
+   res.send(paralegalcvResumeExample());
+}); 
+router.get('/paralegal-resume-example', (req, res)=>{
+   res.send(paralegalResumeExample());
+}); 
+router.get('/pilot-cv-resume-example', (req, res)=>{
+   res.send(pilotResumeExample());
+}); 
+router.get('/public-relations-resume-example', (req, res)=>{
+   res.send(publicrelationsResumeExample());
+}); 
+router.get('/real-estate-resume-example', (req, res)=>{
+   res.send(realestateResumeExample());
+}); 
+router.get('/warehouse-resume-example', (req, res)=>{
+   res.send(warehouseResumeExample());
+}); 
+
+
+
+
+
+
+
+
 
 router.get('/call-center-agent-resume-example', (req, res)=>{
    res.send(callcenteragentResumeExample());
