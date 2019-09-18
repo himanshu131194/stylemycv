@@ -30,7 +30,7 @@ class ListCvs extends Component{
 		this.setState({[loadingId]: 0});
    }
    render(){
-	 let domain = "http://localhost:8000/template"
+	 let domain = "/template"
    	 return(
        <div className="app-main__outer sidebar__fixed">
                      <div className="app-main__inner">
