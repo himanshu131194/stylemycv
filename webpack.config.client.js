@@ -38,6 +38,10 @@ const config = {
                  }
                ]
              },
+             {
+                test: /\.(ttf|eot|svg|gif|jpg|png|woff|woff2)(\?[\s\S]+)?$/,
+                use: 'file-loader'
+            },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg|gif)$/, use: ['url-loader?limit=100000']
             }
