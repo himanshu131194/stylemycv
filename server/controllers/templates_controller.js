@@ -101,6 +101,7 @@ import consultingResumeExample from  '../resumeTemplates/other/consulting/consul
 import healthcareconsultingResumeExample from '../resumeTemplates/other/consulting/healthcare-consulting-resume-example'
 // import logisticsmanagerResumeExample from '../resumeTemplates/other/logistics/logistics-manager-resume-example'
 import logisticsResumeExample from '../resumeTemplates/other/logistics/logistics-resume-example'
+import militaryResumeExample from '../resumeTemplates/other/military/military-resume-example'
 import paralegalcvResumeExample from '../resumeTemplates/other/paralegal/paralegal-resume-cv-example'
 import paralegalResumeExample from '../resumeTemplates/other/paralegal/paralegal-resume-example'
 import pilotResumeExample from '../resumeTemplates/other/pilot/pilot-cv-example'
@@ -131,6 +132,9 @@ router.get('/healthcare-consulting-resume-example', (req, res)=>{
 // }); 
 router.get('/logistics-resume-example', (req, res)=>{
    res.send(logisticsResumeExample());
+}); 
+router.get('/military-resume-example', (req, res)=>{
+   res.send(militaryResumeExample());
 }); 
 router.get('/paralegal-resume-cv-example', (req, res)=>{
    res.send(paralegalcvResumeExample());
