@@ -9,5 +9,5 @@ export default {
   	 SECRET: 'wS+biQuCO+aYzsEnWaDq4y41Eb+aM/O5zE62Yf4+',
   	 PASSWORD: 'WMwQ}t%c(XqR'
   },
-  API_URL : process.env.API_URL
+  API_URL : "https://limitless-falls-23578.herokuapp.com"
 }
