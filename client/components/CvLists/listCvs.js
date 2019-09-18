@@ -41,7 +41,7 @@ class ListCvs extends Component{
 									    <div className="col-md-12 col-lg-6 col-xl-4">
 											<div className="card-shadow-primary card-border mb-3 card">
 											   <div className="card-body p-0 cursor-pointer"  onClick={this.onSelectResume} data-toggle="modal" data-target=".bd-example-modal-lg">
-											   	   <img className="image-fit" src={`${result.s3URL}/${result.resumeImage.thumbnail.url}`}  data-id={result._id}/>
+											   	   <img className="image-fit" src={`${result.s3URL}/${result.resumeImage.original.url}`}  data-id={result._id}/>
 											   </div>
 											   <div className="flex justify-content-between card-footer">
 											      <a href={`${domain}/${result.templateName}`} target="_blank" className="color-fff btn-shadow-primary btn btn-primary btn-lg">View Resume</a>
