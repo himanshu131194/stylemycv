@@ -12,7 +12,7 @@ class MainHeader extends Component{
                      </div>
                      <div className="app-header__mobile-menu">
                         <div>
-                              <button type="button" className="hamburger hamburger--elastic mobile-toggle-nav">
+                              <button type="button" className="hamburger hamburger--elastic mobile-toggle-nav" id="cvlists_toggle">
                                     <span className="hamburger-box">
                                           <span className="hamburger-inner"></span>
                                     </span>

@@ -16,6 +16,7 @@ class SideBar extends Component{
           
           this.props.typesResumes(category, subCategory,()=>{
                         console.log(this.props)
+                        document.getElementById('cvlists_toggle').click();
                 } 
            );
       }
@@ -45,7 +46,7 @@ class SideBar extends Component{
                              this.props.categoriesList.map((result)=>{
                                  return (
                                         <li key={result._id}>
-                                            <a href="#" data-category={result.category} data-subCategory="" onClick={this.selectResumeTemplates}>
+                                            <a href="#" data-category={result.category} data-subCategory="">
                                                 <i className="metismenu-icon pe-7s-folder"></i>
                                                 {result.categoryView}
                                                 <i className="metismenu-state-icon pe-7s-angle-down caret-left"></i>

@@ -3,6 +3,7 @@ import path from 'path'
 import CONFIG from './../config'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
+import cors from 'cors'
 mongoose.Promise = global.Promise
 mongoose.connect(CONFIG.mongoURI, { useNewUrlParser: true , useFindAndModify: false});
 mongoose.connection.on('error', ()=>{
@@ -17,6 +18,8 @@ import Template from './../template.js'
 const app = express();
 
 const CURRENT_WORKING_DIR = process.cwd();
+
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 app.use(bodyParser.json({limit: '10mb', extended: true}))
