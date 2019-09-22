@@ -9,6 +9,6 @@ export default {
   	 SECRET: 'wS+biQuCO+aYzsEnWaDq4y41Eb+aM/O5zE62Yf4+',
   	 PASSWORD: 'WMwQ}t%c(XqR'
   },
-  // API_URL : "http://localhost:8000"
-  API_URL: "https://limitless-falls-23578.herokuapp.com"
+  API_URL : "http://localhost:8000"
+  // API_URL: "https://limitless-falls-23578.herokuapp.com"
 }

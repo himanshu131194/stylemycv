@@ -1,6 +1,5 @@
 import React, {Component, Fragment} from 'react';
 import ChooseTempalte from './chooseTemplate'
-import Footer from '../partials/Footer'
 
 class Home extends Component{
       render(){
@@ -78,7 +77,6 @@ class Home extends Component{
                               </div>
                               <ChooseTempalte/>
                      </div>
-                     <Footer/>
                 </div>
           )
       }

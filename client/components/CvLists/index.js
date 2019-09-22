@@ -1,7 +1,7 @@
-import React, {Component, Fragment} from 'react';
-import Footer from '../partials/Footer'
+import React, {Component, Fragment, lazy, Suspense} from 'react';
 import SideBar from './sideBar'
-import ListCvs from './listCvs'
+// import ListCvs from './listCvs'
+const ListCvs = lazy(()=>import('./listCVs'))
 // import '../../assets/js/main';
 
 class Cvlists extends Component{
@@ -9,7 +9,9 @@ class Cvlists extends Component{
           return (
                 <Fragment>
                     <SideBar/>
-                    <ListCvs/>
+                    <Suspense fallback={<div>Loading...</div>}>
+                     <ListCvs/>
+                    </Suspense>
                 </Fragment>
           )
       }

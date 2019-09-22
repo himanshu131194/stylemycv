@@ -18,7 +18,7 @@ class Models extends Component{
     	 return(
            <Fragment>  
               {this.props.selectedData!=='' &&        	
-	           <div className="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	           <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 				    <div className="modal-dialog modal-lg preview-model">
 				        <div className="modal-content">
 				            <div className="modal-body flex flex-column align-items-center justify-content-center">

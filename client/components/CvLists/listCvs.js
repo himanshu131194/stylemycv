@@ -38,7 +38,7 @@ class ListCvs extends Component{
                                {this.props.listResumes && this.props.listResumes.length>0 && 
                                 this.props.listResumes.map((result)=>{
 									return (
-									    <div className="col-md-12 col-lg-6 col-xl-4">
+									    <div key={result._id} className="col-md-12 col-lg-6 col-xl-4">
 											<div className="card-shadow-primary card-border mb-3 card">
 											   <div className="card-body p-0 cursor-pointer"  onClick={this.onSelectResume} data-toggle="modal" data-target=".bd-example-modal-lg">
 											   	   <img className="image-fit" src={`${result.s3URL}/${result.resumeImage.original.url}`}  data-id={result._id}/>

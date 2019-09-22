@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import ChooseTempalte from './Landing'
 import CvLists from './CvLists'
-import Footer from './partials/Footer'
+import MainFooter from './partials/MainFooter'
 import MainHeader from './partials/MainHeader'
 import '../assets/main.css'
 

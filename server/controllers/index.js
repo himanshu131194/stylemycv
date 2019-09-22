@@ -7,22 +7,41 @@ import rp from 'request-promise'
 
 export default (router)=>{
 
-    router.post('/get-resume-samples', async (req, res)=>{
-           let category = req.body.category;
-           let subCategory = req.body.subCategory;
+    // router.post('/get-resume-samples', async (req, res)=>{
+    //        let category = req.body.category;
+    //        let subCategory = req.body.subCategory;
 
-           const queryFilter = {};
-           if(category) 
-              queryFilter['category'] = category;
-           if(subCategory)
-              queryFilter['subCategory'] = subCategory;
+    //        const queryFilter = {};
+    //        if(category) 
+    //           queryFilter['category'] = category;
+    //        if(subCategory)
+    //           queryFilter['subCategory'] = subCategory;
 
-           const result = await resumeTrack.find(queryFilter);
+    //        const result = await resumeTrack.find(queryFilter);
            
-           res.status(200).send({
-               result
-           })
+    //        res.status(200).send({
+    //            result
+    //        })
+    // });
+
+
+    router.get('/get-resume-samples', async (req, res)=>{
+        let category = req.query.category;
+        let subCategory = req.query.subCategory;
+
+        const queryFilter = {};
+        if(category) 
+           queryFilter['category'] = category;
+        if(subCategory)
+           queryFilter['subCategory'] = subCategory;
+
+        const result = await resumeTrack.find(queryFilter).limit(6);
+        
+        res.status(200).send({
+            result
+        })
     });
+
 
     router.get('/get-resume-categories', async (req, res)=>{
            try{

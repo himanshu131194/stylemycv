@@ -10840,6 +10840,10 @@ a,button,.btn{
     padding-left: 1em;
 }
 
+.z-10{
+    z-index: 10 !important;
+}
+
 .ball-pulse>div{
     background-color: rgb(63, 106, 216);
 }
@@ -10849,6 +10853,7 @@ a,button,.btn{
         min-height: 500px; 
     }
 }
+
 
 /*END */
 
