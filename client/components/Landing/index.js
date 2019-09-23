@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react';
-import ChooseTempalte from './chooseTemplate'
 
 class Home extends Component{
       render(){
@@ -28,7 +27,9 @@ class Home extends Component{
                                               <p>Vestibulum eu odio. Fusce ac felis sit amet ligula pharetra condimentum.</p>
                                                    <div className="text-center">
                                                        <div className="animated lightSpeedIn">
-                                                           <div className="swatch-holder swatch-holder-lg bg-success"></div>
+                                                            <svg className="resume-order-icons">
+                                                                <use href="/icons/sprites.svg#choose_resume" />
+                                                            </svg>
                                                        </div>
                                                    </div>
                                                </div>
@@ -41,7 +42,9 @@ class Home extends Component{
                                               <p>Ut a nisl id ante tempus hendrerit. In auctor lobortis lacus. Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est.</p>
                                                    <div className="text-center">
                                                        <div className="animated lightSpeedIn">
-                                                           <div className="swatch-holder swatch-holder-lg bg-success"></div>
+                                                            <svg className="resume-order-icons">
+                                                                <use href="/icons/sprites.svg#edit_resume" />
+                                                            </svg>
                                                        </div>
                                                    </div>
                                                </div>
@@ -55,7 +58,9 @@ class Home extends Component{
                                               <p>Donec posuere vulputate arcu. Morbi vestibulum volutpat enim.</p>
                                                    <div className="text-center">
                                                        <div className="animated lightSpeedIn">
-                                                           <div className="swatch-holder swatch-holder-lg bg-success"></div>
+                                                            <svg className="resume-order-icons">
+                                                                <use href="/icons/sprites.svg#style_resume" />
+                                                            </svg>
                                                        </div>
                                                    </div>
                                                </div>
@@ -68,14 +73,15 @@ class Home extends Component{
                                               <p>Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Nullam dictum felis eu pede mollis pretium.</p>
                                                    <div className="text-center">
                                                        <div className="animated lightSpeedIn">
-                                                           <div className="swatch-holder swatch-holder-lg bg-success"></div>
+                                                            <svg className="resume-order-icons">
+                                                                <use href="/icons/sprites.svg#download_resume" />
+                                                            </svg>
                                                        </div>
                                                    </div>
                                                </div>
                                        </div>
                                      </div>
                               </div>
-                              <ChooseTempalte/>
                      </div>
                 </div>
           )
